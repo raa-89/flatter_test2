@@ -11,3 +11,8 @@ const double heightImgTraub = 230.0;
 const double paddingHomeConteiner = 20;
 
 const double sizedBoxHome = 10;
+
+const double heightContainer = 505;
+const double heightIconInIconBar = 26;
+const double heightTextInIconBar = 18;
+const double heightTooltipInIconBar = 10.0;

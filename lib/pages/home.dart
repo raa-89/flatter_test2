@@ -5,37 +5,137 @@ import 'package:test2/pages/buttonNavigation.dart';
 import 'package:test2/pages/const.dart';
 import 'package:test2/pages/routes.dart';
 
-class homePages extends StatelessWidget {
+class homePages extends StatefulWidget {
   const homePages({super.key});
+
+  @override
+  State<homePages> createState() => _homePagesState();
+}
+
+class _homePagesState extends State<homePages> {
+  double xOffset = 0;
+  double yOffset = 0;
+  bool isDrawerOpen = false;
 
   // Метод build описывает пользовательский интерфейс
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return /* MaterialApp(
       routes: AppRoutes.routes,
       debugShowCheckedModeBanner: false,
 
-      home: Scaffold(
-        appBar: AppBar(
+      home: Scaffold( */
+    /* appBar: AppBar(
           backgroundColor: colorApp,
-          title: const Text('Домашний экран'),
+             title: const Text('Домашний экран'),
           centerTitle: true,
           leading: Icon(Icons.menu),
-        ),
-        backgroundColor: Colors.white,
-        body: SingleChildScrollView(child: HomeBody()),
-        bottomNavigationBar: NewButtonNavigation(
-          tooltip1: 'G - kod',
-          tooltip2: 'M - kod',
-          tooltip3: 'Makros',
-          onPressedWidget1: AppRoutes.fanucG,
-          onPressedWidget2: AppRoutes.fanucG,
-          onPressedWidget3: AppRoutes.home,
+        ), */
+    //backgroundColor: Colors.white,
+    /* body: */ AnimatedContainer(
+      transform: Matrix4.translationValues(xOffset, yOffset, 0)
+        ..scale(isDrawerOpen ? 0.85 : 1.00)
+        ..rotateZ(isDrawerOpen ? -50 : 0),
+      duration: Duration(milliseconds: 200),
+      color: Colors.white,
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            Column(
+              children: [
+                SizedBox(
+                  height: 80,
+                  child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        isDrawerOpen
+                            ? GestureDetector(
+                                child: Icon(Icons.arrow_back_ios_new),
+                                onTap: () {
+                                  setState(() {
+                                    xOffset = 0;
+                                    yOffset = 0;
+                                    isDrawerOpen = false;
+                                  });
+                                },
+                              )
+                            : GestureDetector(
+                                child: Icon(Icons.menu),
+                                onTap: () {
+                                  setState(() {
+                                    xOffset = 290;
+                                    yOffset = 80;
+                                    isDrawerOpen = true;
+                                  });
+                                },
+                              ),
+                        Center(child: Text('')),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            HomeBody(),
+          ],
         ),
       ),
     );
+    /* bottomNavigationBar: NewButtonNavigation(
+          tooltip1: 'G - kod',
+          tooltip2: 'M - kod',
+          tooltip3: 'Makros',
+          onPressedWidget1: AppRoutes.fanuc,
+          onPressedWidget2: AppRoutes.fanuc,
+          onPressedWidget3: AppRoutes.home,
+          onDataChanged: (int p1) {},
+        ), */
+    /*      ),
+    ); */
   }
 }
+
+/*
+class NewAppBar extends StatefulWidget {
+  const NewAppBar({super.key});
+
+  @override
+  State<NewAppBar> createState() => _NewAppBarState();
+}
+
+ class _NewAppBarState extends State<NewAppBar> {
+  // Метод build описывает пользовательский интерфейс
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SizedBox(
+          height: 50,
+          child: Container(
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  child: Icon(Icons.menu),
+                  onTap: () {
+                    setState(() {
+                      xOffset = 290;
+                      yOffset = 80;
+                      isDrawerOpen = true;
+                    });
+                  },
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+} */
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -81,7 +181,8 @@ class HomeBody extends StatelessWidget {
               7,85
               8,85
               10,85
-              17,85''', style: TextStyle(fontSize: fontSizeBody)),
+              17,85
+              ''', style: TextStyle(fontSize: fontSizeBody)),
           ),
         ],
       ),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:test2/pages/DrawerScreen.dart';
+import 'package:test2/pages/home.dart';
 import 'package:test2/pages/routes.dart';
 
 void main() {
@@ -19,7 +21,8 @@ class _MyAppState extends State<MyApp> {
       routes: AppRoutes.routes,
       debugShowCheckedModeBanner: false,
       title: 'title from material app',
-      initialRoute: AppRoutes.home,
+      //initialRoute: AppRoutes.home,
+      home: Scaffold(body: Stack(children: [Drawerscreen(), homePages()])),
     );
   }
 }
