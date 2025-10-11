@@ -1,4 +1,3 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:test2/pages/const.dart';
 
@@ -32,24 +31,29 @@ class BodySearchKod extends StatelessWidget {
         ),
 
         // Разделитель
-        Divider(),
+        Divider(height: 1),
 
-        // Список строк
+        // Список строк (занимает все оставшееся пространство)
         Expanded(
-          child: ListView.separated(
-            itemCount: _filteredLines.length,
-            itemBuilder: (context, index) {
-              return ListTile(
-                title: Text(
-                  _filteredLines[index],
-                  style: TextStyle(fontSize: fontSizeBody),
-                ),
-                /* leading: CircleAvatar(child: Text('${index + 1}')), */
-              );
-            },
-            separatorBuilder: (BuildContext context, int index) => Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20.0),
-              child: Divider(height: 1.0, color: colorDivider),
+          child: Scrollbar(
+            trackVisibility: true,
+            thickness: thicknessScrollbar,
+            radius: Radius.circular(radiusScrollbar),
+            interactive: true,
+            child: ListView.separated(
+              itemCount: _filteredLines.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(
+                    _filteredLines[index],
+                    style: TextStyle(fontSize: fontSizeBody),
+                  ),
+                );
+              },
+              separatorBuilder: (BuildContext context, int index) => Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Divider(height: 1.0, color: colorDivider),
+              ),
             ),
           ),
         ),

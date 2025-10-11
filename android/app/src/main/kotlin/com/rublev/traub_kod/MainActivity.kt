@@ -1,4 +1,4 @@
-package com.example.test2
+package com.rublev.traub_kod
 
 import io.flutter.embedding.android.FlutterActivity
 

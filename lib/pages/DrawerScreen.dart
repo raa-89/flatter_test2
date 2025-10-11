@@ -1,82 +1,145 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:test2/pages/const.dart';
 import 'package:test2/pages/routes.dart';
 
 class Drawerscreen extends StatefulWidget {
-  const Drawerscreen({super.key});
+  final Function() drawerClose;
+  const Drawerscreen({super.key, required this.drawerClose});
 
   @override
   State<Drawerscreen> createState() => _DrawerscreenState();
 }
 
 class _DrawerscreenState extends State<Drawerscreen> {
-  @override
-  void initState() {
-    //инициализация переменых
-    super.initState();
-  }
+  static const String title1 = titleHome;
+  static const String title2 = titleFanuc;
+  static const String title3 = titleTraub;
+  // static const String title5 = titleSyntec;
+  // static const String title4 = titleInfo;
 
-  @override
-  void dispose() {
-    // Очистка ресурсов
-    super.dispose();
-  }
+  void sentCloseDrawer() => widget.drawerClose();
 
   @override
   Widget build(BuildContext context) {
     //построение изменяемого виджета
     return Container(
-      color: Colors.blueGrey[400],
-      padding: EdgeInsets.only(top: 50, left: 40, bottom: 70),
+      color: Colors.blueGrey[500],
+      padding: EdgeInsets.only(top: 50, left: 20, bottom: 70),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
           Row(
             children: <Widget>[
               CircleAvatar(
-                child: ClipRRect(
-                  borderRadius: BorderRadiusGeometry.circular(20),
-                  child: Image.asset('assets/img/kot.jpg'),
-                ),
+                backgroundImage: AssetImage('assets/img/kot.jpg'),
+                radius: radiusAvatar,
               ),
-              SizedBox(width: 10),
-              const Text("Рублёв Андрей"),
             ],
           ),
-          Row(
-            children: <Widget>[
-              TextButton.icon(
-                onPressed: () {
-                  Navigator.pushNamed(context, AppRoutes.home);
+          Column(
+            children: [
+              SizedBox(height: 30),
+              ItemMenu(
+                labelText: title1,
+                iconWidget: Icons.home,
+                routes: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRoutes.home,
+                    arguments: title1,
+                  );
                 },
-                icon: Icon(Icons.home_outlined, color: Colors.white),
-                label: const Text('Домашний экран'),
               ),
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              TextButton.icon(
-                onPressed: () {
-                  Navigator.pushNamed(context, AppRoutes.fanuc);
+              ItemMenu(
+                labelText: title2,
+                iconWidget: Icons.dashboard_sharp,
+                routes: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRoutes.fanuc,
+                    arguments: title2,
+                  );
                 },
-                icon: Icon(Icons.apps_sharp, color: Colors.white),
-                label: const Text('Fanuc'),
               ),
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              TextButton.icon(
-                onPressed: () {
-                  AppRoutes.fanuc;
+              ItemMenu(
+                labelText: title3,
+                iconWidget: Icons.dashboard_sharp,
+                routes: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRoutes.traub,
+                    arguments: title3,
+                  );
                 },
-                icon: Icon(Icons.apps_sharp, color: Colors.white),
-                label: const Text('Fanuc'),
+              ),
+              /*   ItemMenu(
+                labelText: title5,
+                iconWidget: Icons.dashboard_sharp,
+                routes: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRoutes.syntec,
+                    arguments: title5,
+                  );
+                },
+              ), */
+
+              /* ItemMenu(
+                labelText: title4,
+                iconWidget: Icons.info_outline_rounded,
+                routes: () {
+                  Navigator.pushNamed(
+                    context,
+                    AppRoutes.info,
+                    arguments: title4,
+                  );
+                },
+              ), */
+            ],
+          ),
+          SizedBox(height: 50),
+          Row(
+            children: [
+              TextButton.icon(
+                // onPressed: () => _homePagesStateNew?.closeDrawer(),
+                onPressed: () => sentCloseDrawer(),
+                label: Text('закрыть', style: TextStyle(color: Colors.white54)),
+                icon: Icon(Icons.close, color: Colors.white54),
               ),
             ],
           ),
+          SizedBox(height: 150),
         ],
       ),
+    );
+  }
+}
+
+class ItemMenu extends StatelessWidget {
+  final String labelText;
+  final IconData iconWidget;
+  final Function() routes;
+  const ItemMenu({
+    super.key,
+    required this.labelText,
+    required this.iconWidget,
+    required this.routes,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: <Widget>[
+        TextButton.icon(
+          onPressed: () {
+            // Navigator.pushNamed(context, AppRoutes.home);
+            routes();
+          },
+          icon: Icon(iconWidget, color: Colors.white),
+          label: Text(labelText, style: TextStyle(color: Colors.white)),
+        ),
+      ],
     );
   }
 }

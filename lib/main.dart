@@ -1,9 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:test2/pages/DrawerScreen.dart';
-import 'package:test2/pages/home.dart';
 import 'package:test2/pages/routes.dart';
 
 void main() {
+  runApp(
+    MaterialApp(
+      initialRoute: AppRoutes.home,
+      routes: AppRoutes.routes,
+      debugShowCheckedModeBanner: false,
+    ),
+  );
+}
+
+/* void main() {
   runApp(MyApp());
 }
 
@@ -20,9 +28,9 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       routes: AppRoutes.routes,
       debugShowCheckedModeBanner: false,
-      title: 'title from material app',
-      //initialRoute: AppRoutes.home,
-      home: Scaffold(body: Stack(children: [Drawerscreen(), homePages()])),
+      initialRoute: AppRoutes.home,
+      /* home: Scaffold(body: Stack(children: [Drawerscreen(), homePages()])), */
+      // home: Scaffold(body: homePages()),
     );
   }
-}
+} */

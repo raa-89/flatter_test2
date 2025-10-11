@@ -74,11 +74,6 @@ class _fanuc_G_kodState extends State<fanuc_G_kod> {
     _filteredLines = lines;
   }
 
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
-  }
 
   void _filterLines() {
     setState(() {
