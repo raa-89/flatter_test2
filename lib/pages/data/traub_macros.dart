@@ -10,18 +10,21 @@ class TraubMacros extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            margin: const EdgeInsets.symmetric(
+              horizontal: sizedBoxHome,
+              vertical: 5,
+            ),
             decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(cirkulRadiusCont),
             ),
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: paddingHomeConteiner,
               vertical: 8.0,
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: <Widget>[
                 Text(
                   'G86 Цикл глубокого сверления',
                   style: TextStyle(fontSize: fontSizeTitle),
@@ -44,35 +47,38 @@ F - рабочая подача.''', style: TextStyle(fontSize: fontSizeBody)),
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            margin: const EdgeInsets.symmetric(
+              horizontal: sizedBoxHome,
+              vertical: 5,
+            ),
             decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(cirkulRadiusCont),
             ),
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: paddingHomeConteiner,
               vertical: 8.0,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Макрос канавки',
                   style: TextStyle(fontSize: fontSizeTitle),
                 ),
-                Divider(),
-                Text(
+                const Divider(),
+                const Text(
                   'G204 A.. B.. C.. D.. E.. F.. H.. I.. J.. K.. M.. R..',
                   style: TextStyle(fontSize: fontSizeTitle),
                 ),
-                Divider(),
+                const Divider(),
                 Center(
                   child: Image.asset('assets/img/kanavka.png', height: 180),
                 ),
 
                 Container(
                   alignment: Alignment.topLeft,
-                  child: Text('''Где:
+                  child: const Text('''Где:
 A - начальная верхняя точка по Х;
 B - угол фаски слева;
 C - скругление внутри канавки слева;
@@ -85,6 +91,85 @@ J - конечная точка канавки по Z;
 K - ширина канавочной пласины;
 M - радиус канавочной пластины;
 R - рабочая подача.''', style: TextStyle(fontSize: fontSizeBody)),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            decoration: BoxDecoration(
+              border: Border.all(width: 1),
+              borderRadius: BorderRadius.circular(cirkulRadiusCont),
+            ),
+            padding: EdgeInsets.symmetric(
+              horizontal: paddingHomeConteiner,
+              vertical: 8.0,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Нарезание наружней резьбы',
+                  style: TextStyle(fontSize: fontSizeTitle),
+                ),
+                const Divider(),
+                SizedBox(height: sizedBoxHome),
+                const Text(
+                  'G76 X.. Z.. I.. J.. K.. H.. F.. A57 D..;',
+                  style: TextStyle(fontSize: fontSizeTitle),
+                ),
+                const Divider(),
+                const SizedBox(height: sizedBoxHome),
+
+                const Text(
+                  '''где:
+X, Z - координаты по соответсвующей оси;
+I - наклон при конической резьбе, мм.;
+J - угол при конической резьбе;
+K - начальное расстояние между заготовкой и резцом (0,6 * шаг резьбы);
+H - количество проходов;
+F - шаг резьбы;
+D - глубина резания последнего прохода.''',
+                  style: TextStyle(fontSize: fontSizeBody),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            decoration: BoxDecoration(
+              border: Border.all(width: 1),
+              borderRadius: BorderRadius.circular(cirkulRadiusCont),
+            ),
+            padding: EdgeInsets.symmetric(
+              horizontal: paddingHomeConteiner,
+              vertical: 8.0,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Резьбофрезерование',
+                  style: TextStyle(fontSize: fontSizeTitle),
+                ),
+                const Divider(),
+                SizedBox(height: sizedBoxHome),
+                const Text(
+                  'G337 F.. M.. P.. X.. Y.. Z..;',
+                  style: TextStyle(fontSize: fontSizeTitle),
+                ),
+                const Divider(),
+                const SizedBox(height: sizedBoxHome),
+
+                const Text(
+                  '''где:
+X, Y, Z - координаты по соответсвующей оси;
+F - подача;
+M - номинальный диаметр резьбы;
+P - шаг резьбы.
+  Сумма начального положения фрезы по Z перед макросом резьбофрезерования с конечным положением после нарезания резьбы (Z) должна делиться на цело на шаг резьбы.
+  При переходе на полнопроходную резьбофрезу необходимо поменять последнее перемещение G0 перед резьбофрезерованием примерно на 2 витка в сторону заготовки и снизить подачу примерно до F20.''',
+                  style: TextStyle(fontSize: fontSizeBody),
                 ),
               ],
             ),

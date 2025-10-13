@@ -34,7 +34,7 @@ const double radiusScrollbar = 10;
 
 //расстояние сверху до ninle и иконки меню
 // ignore: constant_identifier_names
-const double standing_up_to_uppbar = 100;
+const double standing_up_to_uppbar = 110;
 
 //скругление бордера в макросах
 const double cirkulRadiusCont = 25;
@@ -45,3 +45,9 @@ const String titleFanuc = 'FANUC 0i-tf plus (sowin)';
 const String titleTraub = 'TRAUB (TX8H)';
 const String titleSyntec = 'SYNTEC 22TB (blin)';
 const String titleInfo = 'О приложении';
+
+//размер иконок меню
+const double iconSizeDrawer = 30.0;
+
+//разница при свайпе для открытия/закрытия drawer
+const double deltaDx = 2.8;

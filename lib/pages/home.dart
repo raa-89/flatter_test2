@@ -12,6 +12,8 @@ class homePages extends StatefulWidget {
 }
 
 class homePagesState extends State<homePages> {
+  // ignore: unused_field
+  double _startDragX = 0.0;
   double xOffset = 0;
   double yOffset = 0;
   bool isDrawerOpen = false;
@@ -39,6 +41,7 @@ class homePagesState extends State<homePages> {
     RouteSettings settings = ModalRoute.of(context)!.settings;
     titleFromDrawer = settings.arguments ?? 'Домашний экран';
     return Scaffold(
+      // key: _scaffoldKey,
       body: Stack(
         children: [
           Drawerscreen(drawerClose: closeDrawer),
@@ -59,6 +62,12 @@ class homePagesState extends State<homePages> {
             /* color: Colors.white, */
             child: GestureDetector(
               onTap: isDrawerOpen ? closeDrawer : null,
+              onHorizontalDragStart: (details) =>
+                  _startDragX = details.globalPosition.dx,
+              onHorizontalDragUpdate: (details) {
+                if (details.delta.dx > deltaDx) openDrawer();
+                if (details.delta.dx < -deltaDx) closeDrawer();
+              },
               child: Column(
                 children: [
                   Column(
@@ -73,12 +82,24 @@ class homePagesState extends State<homePages> {
                             children: [
                               isDrawerOpen
                                   ? GestureDetector(
-                                      child: Icon(Icons.arrow_back_ios_new),
-                                      onTap: () => closeDrawer(),
+                                      child: const Icon(
+                                        Icons.arrow_back_ios_new,
+                                        size: iconSizeDrawer,
+                                      ),
+                                      onTap: () {
+                                        closeDrawer();
+                                        // Navigator.pop(context);
+                                      },
                                     )
                                   : GestureDetector(
-                                      child: Icon(Icons.menu),
-                                      onTap: () => openDrawer(),
+                                      child: Icon(
+                                        Icons.menu,
+                                        size: iconSizeDrawer,
+                                      ),
+                                      onTap: () {
+                                        openDrawer();
+                                        // Navigator.pop(context);
+                                      },
                                     ),
                               Expanded(
                                 child: Center(

@@ -14,6 +14,8 @@ class BodyFanuc extends StatefulWidget {
 }
 
 class BodyFanucState extends State<BodyFanuc> {
+    // ignore: unused_field
+  double _startDragX = 0.0;
   double xOffset = 0;
   double yOffset = 0;
   bool isDrawerOpen = false;
@@ -57,7 +59,7 @@ class BodyFanucState extends State<BodyFanuc> {
     return Scaffold(
       body: Stack(
         children: [
-          Drawerscreen(drawerClose: closeDrawer,),
+          Drawerscreen(drawerClose: closeDrawer),
           AnimatedContainer(
             transform: Matrix4.translationValues(xOffset, yOffset, 0)
               // ignore: deprecated_member_use
@@ -72,6 +74,12 @@ class BodyFanucState extends State<BodyFanuc> {
             ),
             child: GestureDetector(
               onTap: isDrawerOpen ? () => closeDrawer() : null,
+              onHorizontalDragStart: (details) =>
+                  _startDragX = details.globalPosition.dx,
+              onHorizontalDragUpdate: (details) {
+                if (details.delta.dx > deltaDx) openDrawer();
+                if (details.delta.dx < -deltaDx) closeDrawer();
+              },
               child: Column(
                 children: [
                   // Заголовок
@@ -84,11 +92,14 @@ class BodyFanucState extends State<BodyFanuc> {
                         children: [
                           isDrawerOpen
                               ? GestureDetector(
-                                  child: Icon(Icons.arrow_back_ios_new),
+                                  child: Icon(
+                                    Icons.arrow_back_ios_new,
+                                    size: iconSizeDrawer,
+                                  ),
                                   onTap: () => closeDrawer(),
                                 )
                               : GestureDetector(
-                                  child: Icon(Icons.menu),
+                                  child: Icon(Icons.menu, size: iconSizeDrawer),
                                   onTap: () => openDrawer(),
                                 ),
                           Expanded(
@@ -103,10 +114,10 @@ class BodyFanucState extends State<BodyFanuc> {
                       ),
                     ),
                   ),
-              
+
                   // Основной контент (занимает все доступное пространство)
                   Expanded(child: widgetBody),
-              
+
                   // Нижняя навигация
                   NewButtonNavigation(
                     onDataChanged: kolbeckData,

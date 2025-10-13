@@ -49,6 +49,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                     AppRoutes.home,
                     arguments: title1,
                   );
+                  sentCloseDrawer();
                 },
               ),
               ItemMenu(
@@ -60,6 +61,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                     AppRoutes.fanuc,
                     arguments: title2,
                   );
+                  sentCloseDrawer();
                 },
               ),
               ItemMenu(
@@ -71,6 +73,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                     AppRoutes.traub,
                     arguments: title3,
                   );
+                  sentCloseDrawer();
                 },
               ),
               /*   ItemMenu(
@@ -135,6 +138,7 @@ class ItemMenu extends StatelessWidget {
           onPressed: () {
             // Navigator.pushNamed(context, AppRoutes.home);
             routes();
+            // Navigator.pop(context);
           },
           icon: Icon(iconWidget, color: Colors.white),
           label: Text(labelText, style: TextStyle(color: Colors.white)),

@@ -15,6 +15,8 @@ class BodyTraub extends StatefulWidget {
 }
 
 class BodyTraubState extends State<BodyTraub> {
+    // ignore: unused_field
+  double _startDragX = 0.0;
   double xOffset = 0;
   double yOffset = 0;
   bool isDrawerOpen = false;
@@ -77,6 +79,12 @@ class BodyTraubState extends State<BodyTraub> {
               ),
               child: GestureDetector(
                 onTap: isDrawerOpen ? () => closeDrawer() : null,
+                onHorizontalDragStart: (details) =>
+                  _startDragX = details.globalPosition.dx,
+              onHorizontalDragUpdate: (details) {
+                if (details.delta.dx > deltaDx) openDrawer();
+                if (details.delta.dx < -deltaDx) closeDrawer();
+              },
                 child: Column(
                   children: [
                     // Заголовок
@@ -89,11 +97,13 @@ class BodyTraubState extends State<BodyTraub> {
                           children: [
                             isDrawerOpen
                                 ? GestureDetector(
-                                    child: Icon(Icons.arrow_back_ios_new),
+                                    child: Icon(Icons.arrow_back_ios_new,
+                                        size: iconSizeDrawer),
                                     onTap: () => closeDrawer(),
                                   )
                                 : GestureDetector(
-                                    child: Icon(Icons.menu),
+                                    child: Icon(Icons.menu,
+                                        size: iconSizeDrawer),
                                     onTap: () => openDrawer(),
                                   ),
                             Expanded(
