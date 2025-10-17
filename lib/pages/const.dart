@@ -34,7 +34,7 @@ const double radiusScrollbar = 10;
 
 //расстояние сверху до ninle и иконки меню
 // ignore: constant_identifier_names
-const double standing_up_to_uppbar = 110;
+const double standing_up_to_uppbar = 55;
 
 //скругление бордера в макросах
 const double cirkulRadiusCont = 25;

@@ -45,75 +45,77 @@ class homePagesState extends State<homePages> {
       body: Stack(
         children: [
           Drawerscreen(drawerClose: closeDrawer),
-          AnimatedContainer(
-            transform: Matrix4.translationValues(xOffset, yOffset, 0)
-              // ignore: deprecated_member_use
-              ..scale(isDrawerOpen ? drawerOpenScale : drawerCloseScale)
-              ..rotateZ(
-                isDrawerOpen ? drawerOpenRotation : drawerCloseRotation,
+          SafeArea(
+            child: AnimatedContainer(
+              transform: Matrix4.translationValues(xOffset, yOffset, 0)
+                // ignore: deprecated_member_use
+                ..scale(isDrawerOpen ? drawerOpenScale : drawerCloseScale)
+                ..rotateZ(
+                  isDrawerOpen ? drawerOpenRotation : drawerCloseRotation,
+                ),
+              duration: animationDuration,
+              decoration: BoxDecoration(
+                borderRadius: isDrawerOpen
+                    ? BorderRadius.circular(radiusCont)
+                    : BorderRadius.circular(0),
+                color: Colors.white,
               ),
-            duration: animationDuration,
-            decoration: BoxDecoration(
-              borderRadius: isDrawerOpen
-                  ? BorderRadius.circular(radiusCont)
-                  : BorderRadius.circular(0),
-              color: Colors.white,
-            ),
-            /* color: Colors.white, */
-            child: GestureDetector(
-              onTap: isDrawerOpen ? closeDrawer : null,
-              onHorizontalDragStart: (details) =>
-                  _startDragX = details.globalPosition.dx,
-              onHorizontalDragUpdate: (details) {
-                if (details.delta.dx > deltaDx) openDrawer();
-                if (details.delta.dx < -deltaDx) closeDrawer();
-              },
-              child: Column(
-                children: [
-                  Column(
-                    children: [
-                      SizedBox(
-                        height: standing_up_to_uppbar,
-                        child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 20),
+              /* color: Colors.white, */
+              child: GestureDetector(
+                onTap: isDrawerOpen ? closeDrawer : null,
+                onHorizontalDragStart: (details) =>
+                    _startDragX = details.globalPosition.dx,
+                onHorizontalDragUpdate: (details) {
+                  if (details.delta.dx > deltaDx) openDrawer();
+                  if (details.delta.dx < -deltaDx) closeDrawer();
+                },
+                child: Column(
+                  children: [
+                    Column(
+                      children: [
+                        SizedBox(
+                          height: standing_up_to_uppbar,
+                          child: Container(
+                            margin: EdgeInsets.symmetric(horizontal: 20),
 
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              isDrawerOpen
-                                  ? GestureDetector(
-                                      child: const Icon(
-                                        Icons.arrow_back_ios_new,
-                                        size: iconSizeDrawer,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                isDrawerOpen
+                                    ? GestureDetector(
+                                        child: const Icon(
+                                          Icons.arrow_back_ios_new,
+                                          size: iconSizeDrawer,
+                                        ),
+                                        onTap: () {
+                                          closeDrawer();
+                                          // Navigator.pop(context);
+                                        },
+                                      )
+                                    : GestureDetector(
+                                        child: Icon(
+                                          Icons.menu,
+                                          size: iconSizeDrawer,
+                                        ),
+                                        onTap: () {
+                                          openDrawer();
+                                          // Navigator.pop(context);
+                                        },
                                       ),
-                                      onTap: () {
-                                        closeDrawer();
-                                        // Navigator.pop(context);
-                                      },
-                                    )
-                                  : GestureDetector(
-                                      child: Icon(
-                                        Icons.menu,
-                                        size: iconSizeDrawer,
-                                      ),
-                                      onTap: () {
-                                        openDrawer();
-                                        // Navigator.pop(context);
-                                      },
-                                    ),
-                              Expanded(
-                                child: Center(
-                                  child: Text(titleFromDrawer as String),
+                                Expanded(
+                                  child: Center(
+                                    child: Text(titleFromDrawer as String),
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Expanded(child: SingleChildScrollView(child: HomeBody())),
-                ],
+                      ],
+                    ),
+                    Expanded(child: SingleChildScrollView(child: HomeBody())),
+                  ],
+                ),
               ),
             ),
           ),
