@@ -15,7 +15,7 @@ class BodyTraub extends StatefulWidget {
 }
 
 class BodyTraubState extends State<BodyTraub> {
-    // ignore: unused_field
+  // ignore: unused_field
   double _startDragX = 0.0;
   double xOffset = 0;
   double yOffset = 0;
@@ -62,6 +62,7 @@ class BodyTraubState extends State<BodyTraub> {
       debugShowCheckedModeBanner: false,
       routes: AppRoutes.routes,
       home: Scaffold(
+        backgroundColor: Colors.white,
         body: Stack(
           children: [
             Drawerscreen(drawerClose: closeDrawer),
@@ -81,11 +82,11 @@ class BodyTraubState extends State<BodyTraub> {
                 child: GestureDetector(
                   onTap: isDrawerOpen ? () => closeDrawer() : null,
                   onHorizontalDragStart: (details) =>
-                    _startDragX = details.globalPosition.dx,
-                onHorizontalDragUpdate: (details) {
-                  if (details.delta.dx > deltaDx) openDrawer();
-                  if (details.delta.dx < -deltaDx) closeDrawer();
-                },
+                      _startDragX = details.globalPosition.dx,
+                  onHorizontalDragUpdate: (details) {
+                    if (details.delta.dx > deltaDx) openDrawer();
+                    if (details.delta.dx < -deltaDx) closeDrawer();
+                  },
                   child: Column(
                     children: [
                       // Заголовок
@@ -98,13 +99,17 @@ class BodyTraubState extends State<BodyTraub> {
                             children: [
                               isDrawerOpen
                                   ? GestureDetector(
-                                      child: Icon(Icons.arrow_back_ios_new,
-                                          size: iconSizeDrawer),
+                                      child: Icon(
+                                        Icons.arrow_back_ios_new,
+                                        size: iconSizeDrawer,
+                                      ),
                                       onTap: () => closeDrawer(),
                                     )
                                   : GestureDetector(
-                                      child: Icon(Icons.menu,
-                                          size: iconSizeDrawer),
+                                      child: Icon(
+                                        Icons.menu,
+                                        size: iconSizeDrawer,
+                                      ),
                                       onTap: () => openDrawer(),
                                     ),
                               Expanded(
@@ -119,10 +124,10 @@ class BodyTraubState extends State<BodyTraub> {
                           ),
                         ),
                       ),
-              
+
                       // Основной контент (занимает все доступное пространство)
                       Expanded(child: widgetBody),
-              
+
                       // Нижняя навигация
                       NewButtonNavigation(
                         onDataChanged: kolbeckData,

@@ -55,7 +55,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                 ),
                 ItemMenu(
                   labelText: title2,
-                  iconWidget: Icons.dashboard_sharp,
+                  iconWidget:  Icons.dashboard_sharp,
                   routes: () {
                     Navigator.pushNamed(
                       context,
@@ -88,7 +88,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                     );
                   },
                 ), */
-      
+
                 /* ItemMenu(
                   labelText: title4,
                   iconWidget: Icons.info_outline_rounded,
@@ -108,8 +108,11 @@ class _DrawerscreenState extends State<Drawerscreen> {
                 TextButton.icon(
                   // onPressed: () => _homePagesStateNew?.closeDrawer(),
                   onPressed: () => sentCloseDrawer(),
-                  label: Text('закрыть', style: TextStyle(color: Colors.white54)),
-                  icon: Icon(Icons.close, color: Colors.white54),
+                  label: const Text(
+                    'закрыть',
+                    style: TextStyle(color: Colors.white54),
+                  ),
+                  icon: const Icon(Icons.close, color: Colors.white54),
                 ),
               ],
             ),

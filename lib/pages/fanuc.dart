@@ -57,6 +57,7 @@ class BodyFanucState extends State<BodyFanuc> {
     RouteSettings settings = ModalRoute.of(context)!.settings;
     titleFromDrawer = settings.arguments ?? '';
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Drawerscreen(drawerClose: closeDrawer),

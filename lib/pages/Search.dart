@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test2/pages/const.dart';
+// import 'package:test2/pages/editList.dart';
 
 class BodySearchKod extends StatelessWidget {
   const BodySearchKod({
@@ -44,6 +45,20 @@ class BodySearchKod extends StatelessWidget {
               itemCount: _filteredLines.length,
               itemBuilder: (context, index) {
                 return ListTile(
+                  enabled: true,
+                  // onTap: () {
+                  //   Navigator.push(
+                  //     context,
+                  //     MaterialPageRoute(
+                  //       builder: (context) =>
+                  //           Editlist(dataFromList: _filteredLines[index]),
+                  //     ),
+                  //   );
+                  // },
+                  // trailing: IconButton(
+                  //   onPressed: () {},
+                  //   icon: Icon(Icons.arrow_forward_ios_sharp),
+                  // ),
                   title: Text(
                     _filteredLines[index],
                     style: TextStyle(fontSize: fontSizeBody),

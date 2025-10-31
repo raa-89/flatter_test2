@@ -42,6 +42,7 @@ class homePagesState extends State<homePages> {
     titleFromDrawer = settings.arguments ?? 'Домашний экран';
     return Scaffold(
       // key: _scaffoldKey,
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Drawerscreen(drawerClose: closeDrawer),
