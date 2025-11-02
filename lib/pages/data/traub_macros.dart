@@ -96,7 +96,10 @@ R - рабочая подача.''', style: TextStyle(fontSize: fontSizeBody)),
             ),
           ),
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            margin: const EdgeInsets.symmetric(
+              horizontal: sizedBoxHome,
+              vertical: 5,
+            ),
             decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(cirkulRadiusCont),
@@ -136,7 +139,10 @@ D - глубина резания последнего прохода.''',
             ),
           ),
           Container(
-            margin: const EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            margin: const EdgeInsets.symmetric(
+              horizontal: sizedBoxHome,
+              vertical: 5,
+            ),
             decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(cirkulRadiusCont),
