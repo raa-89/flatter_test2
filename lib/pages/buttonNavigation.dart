@@ -31,7 +31,7 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(radiusCont)),
+        borderRadius: const BorderRadius.all(Radius.circular(radiusCont)),
         color: Colors.blueGrey[50],
       ),
 
@@ -59,7 +59,7 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
                 ),
                 Text(
                   widget.tooltip1,
-                  style: TextStyle(fontSize: heightTooltipInIconBar),
+                  style: const TextStyle(fontSize: heightTooltipInIconBar),
                 ),
               ],
             ),
@@ -84,7 +84,7 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
                 ),
                 Text(
                   widget.tooltip2,
-                  style: TextStyle(fontSize: heightTooltipInIconBar),
+                  style: const TextStyle(fontSize: heightTooltipInIconBar),
                 ),
               ],
             ),
@@ -106,7 +106,7 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
                 ),
                 Text(
                   widget.tooltip3,
-                  style: TextStyle(fontSize: heightTooltipInIconBar),
+                  style: const TextStyle(fontSize: heightTooltipInIconBar),
                 ),
               ],
             ),

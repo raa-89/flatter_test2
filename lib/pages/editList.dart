@@ -18,7 +18,7 @@ class EditlistState extends State<Editlist> {
         children: [
           SafeArea(
             child: Container(
-              decoration: BoxDecoration(color: Colors.white),
+              decoration: const BoxDecoration(color: Colors.white),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -26,12 +26,12 @@ class EditlistState extends State<Editlist> {
                   SizedBox(
                     height: standing_up_to_uppbar,
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           GestureDetector(
-                            child: Icon(
+                            child: const Icon(
                               Icons.arrow_back_ios_new,
                               size: iconSizeDrawer,
                             ),
@@ -53,10 +53,10 @@ class EditlistState extends State<Editlist> {
                   // Основной контент (занимает все доступное пространство)
                   Expanded(
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 20),
+                      margin: const EdgeInsets.symmetric(horizontal: 20),
                       child: Text(
                         _dataFromList,
-                        style: TextStyle(fontSize: fontSizeTitle),
+                        style: const TextStyle(fontSize: fontSizeTitle),
                       ),
                     ),
                   ),

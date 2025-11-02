@@ -14,11 +14,11 @@ class AppRoutes {
 
   static Map<String, Widget Function(BuildContext)> get routes {
     return {
-      home: (context) => homePages(),
-      fanuc: (context) => BodyFanuc(),
-      traub: (context) => BodyTraub(),
-      info: (context) => InfoPages(),
-      syntec: (context) => BodySyntec(),
+      home: (context) => const homePages(),
+      fanuc: (context) => const BodyFanuc(),
+      traub: (context) => const BodyTraub(),
+      info: (context) => const InfoPages(),
+      syntec: (context) => const BodySyntec(),
     };
   }
 }

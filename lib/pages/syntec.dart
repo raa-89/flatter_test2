@@ -20,7 +20,7 @@ class BodySyntecState extends State<BodySyntec> {
   double yOffset = 0;
   bool isDrawerOpen = false;
   int pages = 1;
-  Widget widgetBody = Traub_g_kod();
+  Widget widgetBody = const Traub_g_kod();
   static late Object titleFromDrawer;
 
   void closeDrawer() {
@@ -43,18 +43,18 @@ class BodySyntecState extends State<BodySyntec> {
     setState(() {
       pages = data;
       if (pages == 1) {
-        widgetBody = SyntecG();
+        widgetBody = const SyntecG();
       } else if (pages == 2) {
-        widgetBody = SyntecG();
+        widgetBody = const SyntecG();
       } else {
-        widgetBody = SyntecG();
+        widgetBody = const SyntecG();
       }
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    RouteSettings settings = ModalRoute.of(context)!.settings;
+    final RouteSettings settings = ModalRoute.of(context)!.settings;
     titleFromDrawer = settings.arguments ?? '';
 
     return MaterialApp(
@@ -90,20 +90,20 @@ class BodySyntecState extends State<BodySyntec> {
                     SizedBox(
                       height: standing_up_to_uppbar,
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             isDrawerOpen
                                 ? GestureDetector(
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.arrow_back_ios_new,
                                       size: iconSizeDrawer,
                                     ),
                                     onTap: () => closeDrawer(),
                                   )
                                 : GestureDetector(
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.menu,
                                       size: iconSizeDrawer,
                                     ),
@@ -113,7 +113,7 @@ class BodySyntecState extends State<BodySyntec> {
                               child: Center(
                                 child: Text(
                                   titleFromDrawer as String,
-                                  style: TextStyle(fontSize: fontSizeTitle),
+                                  style: const TextStyle(fontSize: fontSizeTitle),
                                 ),
                               ),
                             ),

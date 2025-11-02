@@ -20,7 +20,7 @@ class BodyFanucState extends State<BodyFanuc> {
   double yOffset = 0;
   bool isDrawerOpen = false;
   int pages = 1;
-  Widget widgetBody = fanuc_G_kod();
+  Widget widgetBody = const fanuc_G_kod();
   static late Object titleFromDrawer;
 
   void closeDrawer() {
@@ -43,18 +43,18 @@ class BodyFanucState extends State<BodyFanuc> {
     setState(() {
       pages = data;
       if (pages == 1) {
-        widgetBody = fanuc_G_kod();
+        widgetBody = const fanuc_G_kod();
       } else if (pages == 2) {
-        widgetBody = Fanuc_M_kod();
+        widgetBody = const Fanuc_M_kod();
       } else {
-        widgetBody = FanucMacros();
+        widgetBody = const FanucMacros();
       }
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    RouteSettings settings = ModalRoute.of(context)!.settings;
+    final RouteSettings settings = ModalRoute.of(context)!.settings;
     titleFromDrawer = settings.arguments ?? '';
     return Scaffold(
       backgroundColor: Colors.white,
@@ -88,27 +88,27 @@ class BodyFanucState extends State<BodyFanuc> {
                     SizedBox(
                       height: standing_up_to_uppbar,
                       child: Container(
-                        margin: EdgeInsets.symmetric(horizontal: 20),
+                        margin: const EdgeInsets.symmetric(horizontal: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             isDrawerOpen
                                 ? GestureDetector(
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.arrow_back_ios_new,
                                       size: iconSizeDrawer,
                                     ),
                                     onTap: () => closeDrawer(),
                                   )
                                 : GestureDetector(
-                                    child: Icon(Icons.menu, size: iconSizeDrawer),
+                                    child: const Icon(Icons.menu, size: iconSizeDrawer),
                                     onTap: () => openDrawer(),
                                   ),
                             Expanded(
                               child: Center(
                                 child: Text(
                                   titleFromDrawer as String,
-                                  style: TextStyle(fontSize: fontSizeTitle),
+                                  style: const TextStyle(fontSize: fontSizeTitle),
                                 ),
                               ),
                             ),

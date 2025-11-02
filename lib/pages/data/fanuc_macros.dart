@@ -8,36 +8,36 @@ class FanucMacros extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: sizedBoxHome),
+        margin: const EdgeInsets.symmetric(horizontal: sizedBoxHome),
         decoration: BoxDecoration(
           border: Border.all(width: 1),
           borderRadius: BorderRadius.circular(cirkulRadiusCont),
         ),
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: paddingHomeConteiner,
           vertical: 8.0,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Вкл./Откл. вращения шпинделей',
               style: TextStyle(fontSize: fontSizeTitle),
             ),
-            Divider(),
+            const Divider(),
             Image.asset('assets/img/sowin.jpg'),
-            SizedBox(height: sizedBoxHome),
-            Text(
+            const SizedBox(height: sizedBoxHome),
+            const Text(
               'Направление вращения шпинделей:',
               style: TextStyle(fontSize: fontSizeBody),
             ),
-            NewTextSeparated(data: 'М03 ГШП по часовой стрелке (вправо)'),
-            NewTextSeparated(data: 'М04 ГШП против часовой стрелке (влево)'),
-            NewTextSeparated(data: 'М05 Останов шпинделя'),
-            NewTextSeparated(
+            const NewTextSeparated(data: 'М03 ГШП по часовой стрелке (вправо)'),
+            const NewTextSeparated(data: 'М04 ГШП против часовой стрелке (влево)'),
+            const NewTextSeparated(data: 'М05 Останов шпинделя'),
+            const NewTextSeparated(
               data: 'М03 Вращение противошпинделя против часовой стрелки',
             ),
-            Text(
+            const Text(
               'М105 Остановка вращения шпинделя',
               style: TextStyle(fontSize: fontSizeBody),
             ),
@@ -57,8 +57,8 @@ class NewTextSeparated extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(data, style: TextStyle(fontSize: fontSizeBody)),
-        Divider(),
+        Text(data, style: const TextStyle(fontSize: fontSizeBody)),
+        const Divider(),
       ],
     );
   }

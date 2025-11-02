@@ -38,7 +38,7 @@ class homePagesState extends State<homePages> {
   // Метод build описывает пользовательский интерфейс
   @override
   Widget build(BuildContext context) {
-    RouteSettings settings = ModalRoute.of(context)!.settings;
+    final RouteSettings settings = ModalRoute.of(context)!.settings;
     titleFromDrawer = settings.arguments ?? 'Домашний экран';
     return Scaffold(
       // key: _scaffoldKey,
@@ -77,7 +77,7 @@ class homePagesState extends State<homePages> {
                         SizedBox(
                           height: standing_up_to_uppbar,
                           child: Container(
-                            margin: EdgeInsets.symmetric(horizontal: 20),
+                            margin: const EdgeInsets.symmetric(horizontal: 20),
 
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -94,7 +94,7 @@ class homePagesState extends State<homePages> {
                                         },
                                       )
                                     : GestureDetector(
-                                        child: Icon(
+                                        child: const Icon(
                                           Icons.menu,
                                           size: iconSizeDrawer,
                                         ),
@@ -114,7 +114,7 @@ class homePagesState extends State<homePages> {
                         ),
                       ],
                     ),
-                    Expanded(child: SingleChildScrollView(child: HomeBody())),
+                    const Expanded(child: SingleChildScrollView(child: HomeBody())),
                   ],
                 ),
               ),
@@ -132,27 +132,27 @@ class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: paddingHomeConteiner),
+      margin: const EdgeInsets.symmetric(horizontal: paddingHomeConteiner),
       child: Column(
         children: [
-          Center(
-            child: const Text(
+          const Center(
+            child: Text(
               'Шпаргалка оператора/ наладчика ЧПУ',
               style: TextStyle(fontSize: fontSizeTitle),
             ),
           ),
           Image.asset('assets/img/tnl32-1.png', height: heightImgTraub),
-          Text(
+          const Text(
             'В приложении собраны М и G кода на станки со стойкой TRAUB (ТХ8Н) и FANUC 0i-tf plus производства SOWIN, а так же распространённые макросы для станков с ЧПУ.',
             style: TextStyle(fontSize: fontSizeBody),
           ),
-          SizedBox(height: sizedBoxHome),
-          Text(
+          const SizedBox(height: sizedBoxHome),
+          const Text(
             'Немного полезной информаци по режущему инструменту.',
             style: TextStyle(fontSize: fontSizeBody),
           ),
-          SizedBox(height: sizedBoxHome),
-          Center(
+          const SizedBox(height: sizedBoxHome),
+          const Center(
             child: Text(''' Радиус резьбофрез:
             М2 - 0,75
             М2,5 - 095
@@ -164,8 +164,8 @@ class HomeBody extends StatelessWidget {
             М10 - 3,87
             М12 - 4,975''', style: TextStyle(fontSize: fontSizeBody)),
           ),
-          SizedBox(height: sizedBoxHome),
-          Center(
+          const SizedBox(height: sizedBoxHome),
+          const Center(
             child: Text(''' Радиус пазовых фрез:
               7,85
               8,85

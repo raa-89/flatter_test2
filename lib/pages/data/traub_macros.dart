@@ -96,32 +96,32 @@ R - рабочая подача.''', style: TextStyle(fontSize: fontSizeBody)),
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            margin: const EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
             decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(cirkulRadiusCont),
             ),
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: paddingHomeConteiner,
               vertical: 8.0,
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   'Нарезание наружней резьбы',
                   style: TextStyle(fontSize: fontSizeTitle),
                 ),
-                const Divider(),
+                Divider(),
                 SizedBox(height: sizedBoxHome),
-                const Text(
+                Text(
                   'G76 X.. Z.. I.. J.. K.. H.. F.. A57 D..;',
                   style: TextStyle(fontSize: fontSizeTitle),
                 ),
-                const Divider(),
-                const SizedBox(height: sizedBoxHome),
+                Divider(),
+                SizedBox(height: sizedBoxHome),
 
-                const Text(
+                Text(
                   '''где:
 X, Z - координаты по соответсвующей оси;
 I - наклон при конической резьбе, мм.;
@@ -136,32 +136,32 @@ D - глубина резания последнего прохода.''',
             ),
           ),
           Container(
-            margin: EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
+            margin: const EdgeInsets.symmetric(horizontal: sizedBoxHome, vertical: 5),
             decoration: BoxDecoration(
               border: Border.all(width: 1),
               borderRadius: BorderRadius.circular(cirkulRadiusCont),
             ),
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: paddingHomeConteiner,
               vertical: 8.0,
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
+                Text(
                   'Резьбофрезерование',
                   style: TextStyle(fontSize: fontSizeTitle),
                 ),
-                const Divider(),
+                Divider(),
                 SizedBox(height: sizedBoxHome),
-                const Text(
+                Text(
                   'G337 F.. M.. P.. X.. Y.. Z..;',
                   style: TextStyle(fontSize: fontSizeTitle),
                 ),
-                const Divider(),
-                const SizedBox(height: sizedBoxHome),
+                Divider(),
+                SizedBox(height: sizedBoxHome),
 
-                const Text(
+                Text(
                   '''где:
 X, Y, Z - координаты по соответсвующей оси;
 F - подача;
@@ -189,8 +189,8 @@ class NewTextSeparated extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(data, style: TextStyle(fontSize: fontSizeBody)),
-        Divider(),
+        Text(data, style: const TextStyle(fontSize: fontSizeBody)),
+        const Divider(),
       ],
     );
   }

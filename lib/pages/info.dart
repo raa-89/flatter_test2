@@ -38,7 +38,7 @@ class _InfoPagesState extends State<InfoPages> {
   // Метод build описывает пользовательский интерфейс
   @override
   Widget build(BuildContext context) {
-    RouteSettings settings = ModalRoute.of(context)!.settings;
+    final RouteSettings settings = ModalRoute.of(context)!.settings;
     titleFromDrawer = settings.arguments ?? '';
     return Scaffold(
       body: Stack(
@@ -74,19 +74,19 @@ class _InfoPagesState extends State<InfoPages> {
                       SizedBox(
                         height: standing_up_to_uppbar,
                         child: Container(
-                          margin: EdgeInsets.symmetric(horizontal: 20),
+                          margin: const EdgeInsets.symmetric(horizontal: 20),
 
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               isDrawerOpen
                                   ? GestureDetector(
-                                      child: Icon(Icons.arrow_back_ios_new,
+                                      child: const Icon(Icons.arrow_back_ios_new,
                                         size: iconSizeDrawer),
                                       onTap: () => closeDrawer(),
                                     )
                                   : GestureDetector(
-                                      child: Icon(Icons.menu,
+                                      child: const Icon(Icons.menu,
                                         size: iconSizeDrawer),
                                       onTap: () => openDrawer(),
                                     ),
@@ -94,7 +94,7 @@ class _InfoPagesState extends State<InfoPages> {
                                 child: Center(
                                   child: Text(
                                     titleFromDrawer as String,
-                                    style: TextStyle(fontSize: fontSizeTitle),
+                                    style: const TextStyle(fontSize: fontSizeTitle),
                                   ),
                                 ),
                               ),
@@ -104,7 +104,7 @@ class _InfoPagesState extends State<InfoPages> {
                       ),
                     ],
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Scrollbar(
                       trackVisibility: false,
                       thickness: thicknessScrollbar,
@@ -133,8 +133,8 @@ class InfoBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: paddingHomeConteiner),
-      child: Column(
+      margin: const EdgeInsets.symmetric(horizontal: paddingHomeConteiner),
+      child: const Column(
         children: [
           Center(
             child: CircleAvatar(

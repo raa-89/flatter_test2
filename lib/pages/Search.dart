@@ -22,7 +22,7 @@ class BodySearchKod extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: TextField(
             controller: _searchController,
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               labelText: 'Поиск',
               hintText: 'Введите текст для поиска...',
               prefixIcon: Icon(Icons.search),
@@ -32,14 +32,14 @@ class BodySearchKod extends StatelessWidget {
         ),
 
         // Разделитель
-        Divider(height: 1),
+        const Divider(height: 1),
 
         // Список строк (занимает все оставшееся пространство)
         Expanded(
           child: Scrollbar(
             trackVisibility: true,
             thickness: thicknessScrollbar,
-            radius: Radius.circular(radiusScrollbar),
+            radius: const Radius.circular(radiusScrollbar),
             interactive: true,
             child: ListView.separated(
               itemCount: _filteredLines.length,
@@ -61,7 +61,7 @@ class BodySearchKod extends StatelessWidget {
                   // ),
                   title: Text(
                     _filteredLines[index],
-                    style: TextStyle(fontSize: fontSizeBody),
+                    style: const TextStyle(fontSize: fontSizeBody),
                   ),
                 );
               },

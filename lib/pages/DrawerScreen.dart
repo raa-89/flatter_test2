@@ -26,11 +26,11 @@ class _DrawerscreenState extends State<Drawerscreen> {
     return SafeArea(
       child: Container(
         color: Colors.blueGrey[500],
-        padding: EdgeInsets.only(top: 50, left: 20, bottom: 70),
+        padding: const EdgeInsets.only(top: 50, left: 20, bottom: 70),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            Row(
+            const Row(
               children: <Widget>[
                 CircleAvatar(
                   backgroundImage: AssetImage('assets/img/kot.jpg'),
@@ -40,7 +40,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
             ),
             Column(
               children: [
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 ItemMenu(
                   labelText: title1,
                   iconWidget: Icons.home,
@@ -102,7 +102,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                 ), */
               ],
             ),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             Row(
               children: [
                 TextButton.icon(
@@ -116,7 +116,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                 ),
               ],
             ),
-            SizedBox(height: 150),
+            const SizedBox(height: 150),
           ],
         ),
       ),
@@ -146,7 +146,7 @@ class ItemMenu extends StatelessWidget {
             // Navigator.pop(context);
           },
           icon: Icon(iconWidget, color: Colors.white),
-          label: Text(labelText, style: TextStyle(color: Colors.white)),
+          label: Text(labelText, style: const TextStyle(color: Colors.white)),
         ),
       ],
     );
