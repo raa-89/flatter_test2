@@ -1,7 +1,7 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:test2/pages/Search.dart';
+import 'package:test2/widgets/Search.dart';
 
 class Fanuc_M_kod extends StatefulWidget {
   const Fanuc_M_kod({super.key});

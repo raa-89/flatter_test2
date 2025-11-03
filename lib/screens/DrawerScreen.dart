@@ -1,7 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:test2/pages/const.dart';
-import 'package:test2/pages/routes.dart';
+import 'package:test2/const.dart';
+import 'package:test2/widgets/routes.dart';
 
 class Drawerscreen extends StatefulWidget {
   final Function() drawerClose;

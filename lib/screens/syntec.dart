@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test2/pages/DrawerScreen.dart';
-import 'package:test2/pages/buttonNavigation.dart';
-import 'package:test2/pages/const.dart';
-import 'package:test2/pages/data/syntec_g.dart';
-import 'package:test2/pages/data/taub_g.dart';
-import 'package:test2/pages/routes.dart';
+import 'package:test2/screens/DrawerScreen.dart';
+import 'package:test2/widgets/buttonNavigation.dart';
+import 'package:test2/const.dart';
+import 'package:test2/database/data/syntec_g.dart';
+import 'package:test2/database/data/taub_g.dart';
+import 'package:test2/widgets/routes.dart';
 
 class BodySyntec extends StatefulWidget {
   const BodySyntec({super.key});

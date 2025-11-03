@@ -1,8 +1,8 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:test2/pages/DrawerScreen.dart';
-import 'package:test2/pages/const.dart';
+import 'package:test2/screens/DrawerScreen.dart';
+import 'package:test2/const.dart';
 
 class homePages extends StatefulWidget {
   const homePages({super.key});

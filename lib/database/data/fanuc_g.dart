@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:test2/pages/Search.dart';
+// ignore_for_file: camel_case_types
 
-class SyntecG extends StatefulWidget {
-  const SyntecG({super.key});
+import 'package:flutter/material.dart';
+import 'package:test2/widgets/Search.dart';
+
+class fanuc_G_kod extends StatefulWidget {
+  const fanuc_G_kod({super.key});
 
   @override
-  State<SyntecG> createState() => _Syntec_G_kodState();
+  State<fanuc_G_kod> createState() => _fanuc_G_kodState();
 }
 
-// ignore: camel_case_types
-class _Syntec_G_kodState extends State<SyntecG> {
+class _fanuc_G_kodState extends State<fanuc_G_kod> {
   List<String> _allLines = [];
   List<String> _filteredLines = [];
   final TextEditingController _searchController = TextEditingController();
@@ -73,6 +74,7 @@ class _Syntec_G_kodState extends State<SyntecG> {
     _filteredLines = lines;
   }
 
+
   void _filterLines() {
     setState(() {
       _allLines = lines;
@@ -101,3 +103,4 @@ class _Syntec_G_kodState extends State<SyntecG> {
     );
   }
 }
+

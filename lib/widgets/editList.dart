@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test2/pages/const.dart';
+import 'package:test2/const.dart';
 
 class Editlist extends StatefulWidget {
   final String dataFromList;

@@ -1,6 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:test2/pages/const.dart';
+import 'package:test2/const.dart';
 
 class NewButtonNavigation extends StatefulWidget {
   final String tooltip1;

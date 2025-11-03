@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test2/pages/DrawerScreen.dart';
-import 'package:test2/pages/buttonNavigation.dart';
-import 'package:test2/pages/const.dart';
-import 'package:test2/pages/data/fanuc_g.dart';
-import 'package:test2/pages/data/fanuc_m.dart';
-import 'package:test2/pages/data/fanuc_macros.dart';
+import 'package:test2/screens/DrawerScreen.dart';
+import 'package:test2/widgets/buttonNavigation.dart';
+import 'package:test2/const.dart';
+import 'package:test2/database/data/fanuc_g.dart';
+import 'package:test2/database/data/fanuc_m.dart';
+import 'package:test2/database/data/fanuc_macros.dart';
 
 class BodyFanuc extends StatefulWidget {
   const BodyFanuc({super.key});

@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
-import 'package:test2/pages/fanuc.dart';
-import 'package:test2/pages/home.dart';
-import 'package:test2/pages/info.dart';
-import 'package:test2/pages/syntec.dart';
-import 'package:test2/pages/traub.dart';
+import 'package:test2/screens/fanuc.dart';
+import 'package:test2/screens/home.dart';
+import 'package:test2/screens/info.dart';
+import 'package:test2/screens/syntec.dart';
+import 'package:test2/screens/traub.dart';
 
 class AppRoutes {
   static const String home = '/home';

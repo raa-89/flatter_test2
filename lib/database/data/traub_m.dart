@@ -1,7 +1,7 @@
 // ignore_for_file: camel_case_types
 
 import 'package:flutter/material.dart';
-import 'package:test2/pages/Search.dart';
+import 'package:test2/widgets/Search.dart';
 
 class Traub_m_kod extends StatefulWidget {
   const Traub_m_kod({super.key});
