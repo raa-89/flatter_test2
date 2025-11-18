@@ -1,10 +1,11 @@
+// ignore_for_file: overridden_fields
+
 import 'package:flutter/material.dart';
+import 'package:test2/core/mixin/base_operation_mixin.dart';
 import 'package:test2/screens/DrawerScreen.dart';
 import 'package:test2/widgets/buttonNavigation.dart';
 import 'package:test2/const.dart';
 import 'package:test2/database/data/taub_g.dart';
-import 'package:test2/database/data/traub_m.dart';
-import 'package:test2/database/data/traub_macros.dart';
 import 'package:test2/widgets/routes.dart';
 
 class BodyTraub extends StatefulWidget {
@@ -14,7 +15,7 @@ class BodyTraub extends StatefulWidget {
   State<BodyTraub> createState() => BodyTraubState();
 }
 
-class BodyTraubState extends State<BodyTraub> {
+class BodyTraubState extends State<BodyTraub> with OperationMixin<BodyTraub> {
   // ignore: unused_field
   double _startDragX = 0.0;
   double xOffset = 0;
@@ -23,6 +24,17 @@ class BodyTraubState extends State<BodyTraub> {
   int pages = 1;
   Widget widgetBody = const Traub_g_kod();
   static late Object titleFromDrawer;
+
+  @override
+  String machine = "TRAUB (TX8H)";
+  @override
+  String nameCode = "G - kod";
+
+  @override
+  void initState() {
+    super.initState();
+    initializeApp();
+  }
 
   void closeDrawer() {
     setState(() {
@@ -40,17 +52,13 @@ class BodyTraubState extends State<BodyTraub> {
     });
   }
 
-  void kolbeckData(int data) {
-    setState(() {
-      pages = data;
-      if (pages == 1) {
-        widgetBody = const Traub_g_kod();
-      } else if (pages == 2) {
-        widgetBody = const Traub_m_kod();
-      } else {
-        widgetBody = const TraubMacros();
-      }
-    });
+  Widget _buildContent() {
+    return Column(
+      children: [
+        buildSearchField(),
+        Expanded(child: buildOperationsList(isNotes: isNotes)),
+      ],
+    );
   }
 
   @override
@@ -88,7 +96,7 @@ class BodyTraubState extends State<BodyTraub> {
                     if (details.delta.dx < -deltaDx) closeDrawer();
                   },
                   child: Column(
-                    children: [
+                    children: <Widget>[
                       // Заголовок
                       SizedBox(
                         height: standing_up_to_uppbar,
@@ -116,9 +124,16 @@ class BodyTraubState extends State<BodyTraub> {
                                 child: Center(
                                   child: Text(
                                     titleFromDrawer as String,
-                                    style: const TextStyle(fontSize: fontSizeTitle),
+                                    style: const TextStyle(
+                                      fontSize: fontSizeTitle,
+                                    ),
                                   ),
                                 ),
+                              ),
+                              IconButton(
+                                onPressed: reloadApp,
+                                icon: const Icon(Icons.repeat),
+                                tooltip: 'Вернуть в первоночальный вид',
                               ),
                             ],
                           ),
@@ -126,7 +141,13 @@ class BodyTraubState extends State<BodyTraub> {
                       ),
 
                       // Основной контент (занимает все доступное пространство)
-                      Expanded(child: widgetBody),
+                      Expanded(
+                        child: isLoading
+                            ? buildLoadingWidget()
+                            : hasError
+                            ? buildErrorWidget(initializeApp)
+                            : _buildContent(),
+                      ),
 
                       // Нижняя навигация
                       NewButtonNavigation(
@@ -141,6 +162,14 @@ class BodyTraubState extends State<BodyTraub> {
               ),
             ),
           ],
+        ),
+        floatingActionButton: Padding(
+          padding: const EdgeInsets.only(bottom: 70.0),
+          child: FloatingActionButton(
+            onPressed: addOperation,
+            tooltip: 'Добавить операцию',
+            child: const Icon(Icons.add),
+          ),
         ),
       ),
     );
