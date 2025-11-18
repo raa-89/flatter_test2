@@ -243,7 +243,10 @@ mixin OperationMixin<T extends StatefulWidget> on State<T> {
     );
 
     if (confirmed == true) {
-      final success = await operationService.deleteOperation(operation.code);
+      final success = await operationService.deleteOperation(
+        operation.machine, // Передаем machine для идентификации таблицы
+        operation.code,
+      );
       if (success) {
         await loadOperations(machine, nameCode);
         showSnackBar('Операция удалена');
@@ -328,6 +331,17 @@ mixin OperationMixin<T extends StatefulWidget> on State<T> {
             searchQuery = value;
           });
         },
+      ),
+    );
+  }
+
+  Widget NewFloatingActionButton() {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 70.0),
+      child: FloatingActionButton(
+        onPressed: addOperation,
+        tooltip: 'Добавить операцию',
+        child: const Icon(Icons.add),
       ),
     );
   }

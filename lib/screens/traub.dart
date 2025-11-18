@@ -5,7 +5,7 @@ import 'package:test2/core/mixin/base_operation_mixin.dart';
 import 'package:test2/screens/DrawerScreen.dart';
 import 'package:test2/widgets/buttonNavigation.dart';
 import 'package:test2/const.dart';
-import 'package:test2/database/data/taub_g.dart';
+// import 'package:test2/database/data/taub_g.dart';
 import 'package:test2/widgets/routes.dart';
 
 class BodyTraub extends StatefulWidget {
@@ -22,7 +22,7 @@ class BodyTraubState extends State<BodyTraub> with OperationMixin<BodyTraub> {
   double yOffset = 0;
   bool isDrawerOpen = false;
   int pages = 1;
-  Widget widgetBody = const Traub_g_kod();
+  // Widget widgetBody = const Traub_g_kod();
   static late Object titleFromDrawer;
 
   @override
@@ -135,6 +135,11 @@ class BodyTraubState extends State<BodyTraub> with OperationMixin<BodyTraub> {
                                 icon: const Icon(Icons.repeat),
                                 tooltip: 'Вернуть в первоночальный вид',
                               ),
+                              IconButton(
+                                onPressed: addOperation,
+                                icon: const Icon(Icons.add),
+                                tooltip: 'Добавить',
+                              ),
                             ],
                           ),
                         ),
@@ -163,14 +168,8 @@ class BodyTraubState extends State<BodyTraub> with OperationMixin<BodyTraub> {
             ),
           ],
         ),
-        floatingActionButton: Padding(
-          padding: const EdgeInsets.only(bottom: 70.0),
-          child: FloatingActionButton(
-            onPressed: addOperation,
-            tooltip: 'Добавить операцию',
-            child: const Icon(Icons.add),
-          ),
-        ),
+        // floatingActionButton: NewFloatingActionButton(),
+
       ),
     );
   }

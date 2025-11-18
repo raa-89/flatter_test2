@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:test2/screens/fanuc.dart';
 import 'package:test2/screens/home.dart';
 import 'package:test2/screens/info.dart';
-import 'package:test2/screens/syntec.dart';
 import 'package:test2/screens/traub.dart';
 
 class AppRoutes {
@@ -18,7 +17,7 @@ class AppRoutes {
       fanuc: (context) => const BodyFanuc(),
       traub: (context) => const BodyTraub(),
       info: (context) => const InfoPages(),
-      syntec: (context) => const BodySyntec(),
+      // syntec: (context) => const BodySyntec(),
     };
   }
 }
