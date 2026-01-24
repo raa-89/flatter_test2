@@ -29,15 +29,25 @@ class Operation {
     };
   }
 
-  factory Operation.fromMap(Map<String, dynamic> map) {
+    factory Operation.fromMap(Map<String, dynamic> map) {
     return Operation(
-      // id: map['id'],
-      machine: map['machine'],
-      nameCode: map['nameCode'],
-      code: map['code'],
-      name: map['name'],
-      notes: map['notes'],
-      images: map['images'],
+      machine: map['machine']?.toString() ?? '',
+      nameCode: map['nameCode']?.toString() ?? '',
+      code: map['code']?.toString() ?? '',
+      name: map['name']?.toString() ?? '',
+      notes: map['notes']?.toString() ?? '',
+      images: map['images']?.toString() ?? '',
+    );
+  }
+
+    factory Operation.fromJson(Map<String, dynamic> json) {
+    return Operation(
+      machine: json['machine']?.toString() ?? '',
+      nameCode: json['nameCode']?.toString() ?? '',
+      code: json['code']?.toString() ?? '',
+      name: json['name']?.toString() ?? '',
+      notes: json['notes']?.toString() ?? '',
+      images: json['images']?.toString() ?? '',
     );
   }
   @override

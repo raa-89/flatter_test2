@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test2/const.dart';
+import 'package:test2/core/const.dart';
 import '../models/operation_model.dart';
 
 class OperationListTile extends StatelessWidget {
@@ -19,42 +19,53 @@ class OperationListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return isNotes
-        ? Container(
-            margin: const EdgeInsets.symmetric(
-              horizontal: sizedBoxHome,
-              vertical: 2.0,
-            ),
-            decoration: BoxDecoration(
-              border: Border.all(width: 1),
-              borderRadius: BorderRadius.circular(cirkulRadiusCont),
-            ),
-            padding: const EdgeInsets.symmetric(
-              horizontal: paddingHomeConteiner,
-              vertical: 8.0,
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  operation.code,
-                  style: const TextStyle(fontSize: fontSizeTitle),
-                ),
-                // const Divider(),
-                if (operation.images != "") Image.asset(operation.images),
-                const SizedBox(height: sizedBoxHome),
-                NewTextSeparated(data: operation.name),
-                if (operation.notes != "")
-                  NewTextSeparated(data: operation.notes),
-              ],
+        ? GestureDetector(
+            onTap: () => onEdit(),
+            onLongPress: () => onDelete(),
+            child: Container(
+              margin: const EdgeInsets.symmetric(
+                horizontal: sizedBoxHome,
+                vertical: 2.0,
+              ),
+              decoration: BoxDecoration(
+                border: Border.all(width: 1),
+                borderRadius: BorderRadius.circular(cirkulRadiusCont),
+              ),
+              padding: const EdgeInsets.symmetric(
+                horizontal: paddingHomeConteiner,
+                vertical: 8.0,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    operation.code,
+                    style: const TextStyle(
+                      fontSize: fontSizeTitle,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  // const Divider(),
+                  if (operation.images != "")
+                    Center(child: Image.asset(operation.images, height: 200)),
+                  const SizedBox(height: sizedBoxHome),
+                  NewTextSeparated(data: operation.name),
+                  if (operation.notes != "")
+                    NewTextSeparated(data: operation.notes),
+                ],
+              ),
             ),
           )
         : Card(
-            margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+            color: Colors.white,
+            margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+            elevation: 2,
+
             child: ListTile(
               title: Text(
                 "${operation.code}  ${operation.name}",
                 style: const TextStyle(
-                  fontWeight: FontWeight.normal,
+                  fontWeight: TextConst.fontWeightBody,
                   fontSize: 16,
                 ),
               ),
@@ -74,7 +85,13 @@ class NewTextSeparated extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(data, style: const TextStyle(fontSize: fontSizeBody)),
+        Text(
+          data,
+          style: const TextStyle(
+            fontSize: fontSizeBody,
+            fontWeight: FontWeight.w400,
+          ),
+        ),
         const Divider(),
       ],
     );

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:test2/core/mixin/base_operation_mixin.dart';
 import 'package:test2/screens/DrawerScreen.dart';
 import 'package:test2/widgets/buttonNavigation.dart';
-import 'package:test2/const.dart';
+import 'package:test2/core/const.dart';
 
 class BodyFanuc extends StatefulWidget {
   const BodyFanuc({super.key});
@@ -14,62 +14,25 @@ class BodyFanuc extends StatefulWidget {
 }
 
 class BodyFanucState extends State<BodyFanuc> with OperationMixin<BodyFanuc> {
-  // ignore: unused_field
-  double _startDragX = 0.0;
-  double xOffset = 0;
-  double yOffset = 0;
-  bool isDrawerOpen = false;
   int pages = 1;
-  // Widget widgetBody = const fanuc_G_kod();
   static late Object titleFromDrawer;
 
   @override
-  String machine = "FANUC 0i-tf plus (sowin)";
+  String machine = PagesConstants.titleFanuc;
   @override
-  String nameCode = "G - kod";
-  // final OperationService _operationService = OperationService();
-  // List<Operation> _operations = [];
-  // bool _isLoading = true;
-  // bool _hasError = false;
-  // bool _isNotes = false;
-  // String _errorMessage = '';
-  // String _searchQuery = '';
+  String nameCode = PagesConstants.nameCodeGkod;
 
   @override
   void initState() {
     super.initState();
-    initializeApp();
-  }
-
-  void closeDrawer() {
-    setState(() {
-      xOffset = 0;
-      yOffset = 0;
-      isDrawerOpen = false;
-    });
-  }
-
-  void openDrawer() {
-    setState(() {
-      xOffset = drawerOpenXOffset;
-      yOffset = drawerOpenYOffset;
-      isDrawerOpen = true;
-    });
+    initializeApp(machine: machine, nameCode: nameCode);
   }
 
   Widget _buildContent() {
     return Column(
       children: [
         buildSearchField(),
-        Expanded(
-          child: buildOperationsList(isNotes: isNotes),
-          // separatorBuilder: (BuildContext context, int index) {
-          //   return Padding(
-          //     padding: const EdgeInsets.symmetric(horizontal: 20.0),
-          //     child: Divider(height: 1.0, color: Colors.black),
-          //   );
-          // },
-        ),
+        Expanded(child: buildOperationsList(isNotes: isNotes)),
       ],
     );
   }
@@ -100,7 +63,7 @@ class BodyFanucState extends State<BodyFanuc> with OperationMixin<BodyFanuc> {
               child: GestureDetector(
                 onTap: isDrawerOpen ? () => closeDrawer() : null,
                 onHorizontalDragStart: (details) =>
-                    _startDragX = details.globalPosition.dx,
+                    startDragX = details.globalPosition.dx,
                 onHorizontalDragUpdate: (details) {
                   if (details.delta.dx > deltaDx) openDrawer();
                   if (details.delta.dx < -deltaDx) closeDrawer();
@@ -140,16 +103,20 @@ class BodyFanucState extends State<BodyFanuc> with OperationMixin<BodyFanuc> {
                                 ),
                               ),
                             ),
-                            IconButton(
-                              onPressed: reloadApp,
-                              icon: const Icon(Icons.repeat),
-                              tooltip: 'Вернуть в первоночальный вид',
-                            ),
-                            IconButton(
-                              onPressed: addOperation,
-                              icon: const Icon(Icons.add),
-                              tooltip: 'Добавить',
-                            ),
+                            nameCode == 'Macros'
+                                ? const SizedBox()
+                                : IconButton(
+                                    onPressed: reloadApp,
+                                    icon: const Icon(Icons.repeat),
+                                    tooltip: 'Вернуть в первоночальный вид',
+                                  ),
+                            nameCode == 'Macros'
+                                ? const SizedBox()
+                                : IconButton(
+                                    onPressed: addOperation,
+                                    icon: const Icon(Icons.add),
+                                    tooltip: 'Добавить',
+                                  ),
                           ],
                         ),
                       ),
@@ -167,9 +134,10 @@ class BodyFanucState extends State<BodyFanuc> with OperationMixin<BodyFanuc> {
                     // Нижняя навигация
                     NewButtonNavigation(
                       onDataChanged: kolbeckData,
-                      tooltip1: 'G - kod',
-                      tooltip2: 'M - kod',
-                      tooltip3: 'Makros',
+                      tooltip1: PagesConstants.nameCodeGkod,
+                      tooltip2: PagesConstants.nameCodeMkod,
+                      tooltip3: PagesConstants.nameCodeMacros,
+                      isDrawerOpen: isDrawerOpen,
                     ),
                   ],
                 ),

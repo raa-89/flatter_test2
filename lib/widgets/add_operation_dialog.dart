@@ -62,7 +62,9 @@ class _AddOperationDialogState extends State<AddOperationDialog> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         actions: <Widget>[
           IconButton(onPressed: _submit, icon: const Icon(Icons.save)),
         ],
@@ -125,6 +127,19 @@ class _AddOperationDialogState extends State<AddOperationDialog> {
                         minLines: 3,
                         maxLines: 20,
                       ),
+                      if (widget.operation?.images != null &&
+                          widget.operation?.images != '')
+                        Column(
+                          children: [
+                            const SizedBox(height: 8.0),
+                            Center(
+                              child: Image.asset(
+                                widget.operation!.images,
+                                height: 200,
+                              ),
+                            ),
+                          ],
+                        ),
                     ],
                   ),
                 ),

@@ -1,0 +1,3196 @@
+{
+    "operations": [
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G00",
+            "name": "Прямо на ускорреном ходу",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G01",
+            "name": "Подача по прямой/ линейная интерполяция",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G02",
+            "name": "Круговая интерполяция по часовой стрелке",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G03",
+            "name": "Круговая интерполяция против часовой стрелки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G04",
+            "name": "Время ожидания",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G07.1",
+            "name": "Цилиндрическая интерполяция (G107)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G09",
+            "name": "Точная остановка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G10",
+            "name": "Программируемый ввод данных",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G12.1",
+            "name": "Интерполяция в полярных координатах ВКЛ. (G112)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G13.1",
+            "name": "Интерполяция в полярных координатах ВЫКЛ. (G113)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G17",
+            "name": "Плоскость фрезерования X-Y",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G18",
+            "name": "Плоскость фрезерования X-Z",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G19",
+            "name": "Плоскость фрезерования Y-Z",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G20",
+            "name": "Выбор программирования в дюймах",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G21",
+            "name": "Выбор программирования в мм",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G28",
+            "name": "Подвод к точке начала отсчёта",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G32",
+            "name": "Нарезание резьбы c постоянным шагом",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G34",
+            "name": "Нарезание резьбы с переменным шагом",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G40",
+            "name": "Компенсация радиуса режущей кромки выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G41",
+            "name": "Компенсация радиуса резца или фрезы включена, инструмент слева от контура",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G42",
+            "name": "Компенсация радиуса резца или фрезы включена, инструмент справа от контура",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G50",
+            "name": "Смещение СК/ задание ограничения частоты вращения шпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G50.2",
+            "name": "Обработка полигона ВЫКЛ. (G250)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G51.2",
+            "name": "Обработка полигона ВКЛ. (G251)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G65",
+            "name": "Вызов макропрограммы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G66",
+            "name": "Макро режим ВКЛ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G67",
+            "name": "Макро режим ВЫКЛ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G70",
+            "name": "Цикл прецизионной обработки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G71",
+            "name": "Цикл черновой наружной обработки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G72",
+            "name": "Цикл чистовой обработки/ торцевания",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G73",
+            "name": "Цикл черновой обработки – параллельно контуру",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G74",
+            "name": "Цикл черновой обработки с прерывистым резанием – продольно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G75",
+            "name": "Цикл черновой обработки с прерывистым резанием – поперечно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G76",
+            "name": "Многопроходный цикл нарезания резьбы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G80",
+            "name": "Отмена цикла сверления",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G83",
+            "name": "Цикл осевого сверления",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G84",
+            "name": "Цикл осевого нарезания резьбы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G184",
+            "name": "Цикл нарезания резьбы приводным инструментом",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G87",
+            "name": "Циклы радиального сверления",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G188",
+            "name": "Цикл радиального нарезания резьбы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G90",
+            "name": "Цикл НАР/ ВНУТР точения",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G92",
+            "name": "Цикл нарезания резьбы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G96",
+            "name": "Постоянная скорость резания",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G97",
+            "name": "Отмена постоянного контроля скорости резания",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G98",
+            "name": "Подача в мм/мин",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G99",
+            "name": "Подача в мм/оборот",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G150",
+            "name": "Задание СК (после G300, только для оси Z1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G266",
+            "name": "Задание параметра",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G300",
+            "name": "Сброс СК (X1, Z1, Y1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "G - kod",
+            "code": "G310",
+            "name": "Сброс СК (X2, Z2, Y2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М00",
+            "name": "Запрограммированный останов",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М01",
+            "name": "Останов по выбору (при нажатой кнопке М01)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М02",
+            "name": "Конец программы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М03",
+            "name": "ГШП по часовой стрелке (вправо)",
+            "notes": "",
+            "images": "assets/img/sowin.jpg"
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М04",
+            "name": "ГШП против часовой стрелки (влево)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М05",
+            "name": "Останов шпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М06",
+            "name": "Выбор инструмента в магазине / смена инструмента",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М08",
+            "name": "Подача СОЖ включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М09",
+            "name": "Подача СОЖ выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М10",
+            "name": "Зажим заготовки Основной шпиндель",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М11",
+            "name": "Высвобождение заготовки Основной шпиндель",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М13",
+            "name": "М3 + М8",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М14",
+            "name": "М4 + М8",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М15",
+            "name": "М5 + М9",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М23",
+            "name": "Вращение поперечного приводного инстр. по часовой стрелке",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М24",
+            "name": "Вращение поперечного приводного инстр. против часовой стрелки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М25",
+            "name": "Останов поперечного приводного инстр.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М26",
+            "name": "Выдвижение ловушки/ старт конвеера (опция)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М27",
+            "name": "Убирание ловушки/ стоп конвеера (опция)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М29",
+            "name": "Жёсткое резьбонарезание",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М30",
+            "name": "Конец программы с возвратом ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М33",
+            "name": "Вращение осевого приводного инстр. по часовой стрелке",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М34",
+            "name": "Вращение осевого приводного инстр. против часовой стрелки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М35",
+            "name": "Остановка вращения осевого приводного инстр.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М40",
+            "name": "ВКЛ. обдува",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М41",
+            "name": "ВЫКЛ. обдува",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М50",
+            "name": "ВКЛ осей С ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М51",
+            "name": "ВЫКЛ осей С ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М54",
+            "name": "Синхронизация осей С ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М55",
+            "name": "Откл. синхронизации осей С ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М56",
+            "name": "Синхронизация вращения ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М57",
+            "name": "Откл. синхронизации вращения ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М60",
+            "name": "ВКЛ. барфидера",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М61",
+            "name": "ВЫКЛ. барфидера",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М62",
+            "name": "Смена прутка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М78",
+            "name": "Выход выталкивателя вперёт",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М79",
+            "name": "Отход выталкивателя назад",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М82",
+            "name": "Вкл. тормоза ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М83",
+            "name": "Выкл. тормоза ГШП/ противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М91",
+            "name": "Вызов программы автомат. головки обратботки прутка О 9001",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М95",
+            "name": "Вкл монитора смены прутка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М96",
+            "name": "Выкл монитора смены прутка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М97",
+            "name": "Вкл счётчика деталей",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М98",
+            "name": "Вызов подпрограммы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М99",
+            "name": "Зацикливание программы/ возврат из подпрограммы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М103",
+            "name": "Вращение противошпинделя по часовой стрелке",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М104",
+            "name": "Вращение противошпинделя против часовой стрелки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М105",
+            "name": "Остановка вращения противошпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М123",
+            "name": "Вкл. вращения обратного осевого приводного инстр. по часовой стрелке",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М124",
+            "name": "Вкл. вращения обратного осевого приводного инстр. против часовой стрелки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М125",
+            "name": "Выкл. вращения обратного осевого приводного инстр.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М186",
+            "name": "Вкл. конвеер стружки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М187",
+            "name": "Выкл. конвеер стружки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М220",
+            "name": "Отключение синхронной работы осей Z1-Z2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М221",
+            "name": "Вкл. синхронной работы осей Z1-Z2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М260",
+            "name": "Вкл. станции высокого давления (совместно с М08) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М261",
+            "name": "ВКЛ 1-го канала (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М262",
+            "name": "ВЫКЛ 1-го канала (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М263",
+            "name": "ВКЛ 2-го канала (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М264",
+            "name": "ВЫКЛ 2-го канала (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М500- М599",
+            "name": "Команды синхр. каналов",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "FANUC 0i-tf plus (sowin)",
+            "nameCode": "M - kod",
+            "code": "М9",
+            "name": "Вызов подпрограммы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М00",
+            "name": "Запрограммированный останов",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М01",
+            "name": "Останов по выбору (при нажатой кнопке М01)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М03",
+            "name": "ГШпиндель по часовой стрелке (вправо)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М04",
+            "name": "ГШпиндель против часовой стрелки (влево)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М05",
+            "name": "Останов Гшпинделя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М07",
+            "name": "Подача СОЖ включена. Высокое давление",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М08",
+            "name": "Подача СОЖ включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М09",
+            "name": "Подача СОЖ выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М10",
+            "name": "Зажим заготовки Основной шпиндель",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М11",
+            "name": "Высвобождение заготовки Основной шпиндель",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М17",
+            "name": "Ось С включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М18",
+            "name": "Ось С выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М19",
+            "name": "Закрыть фиксир. тормоз ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М30",
+            "name": "Конец программы с возвратом ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М32",
+            "name": "Вкл. отражение 1-й оси",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М33",
+            "name": "Выкл. отражение 1-й оси",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М35",
+            "name": "Вкл. сбег резьбы над углом",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М36",
+            "name": "Выкл. сбег резьбы над углом",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М37",
+            "name": "Вкл. ось Y1 виртуально",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М38",
+            "name": "Выкл. ось Y1 виртуально",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М40",
+            "name": "ГШП Ступень передачи 1 $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М41",
+            "name": "ГШП Ступень передачи 2 $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М42",
+            "name": "ГШП Ступень передачи 3 $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М43",
+            "name": "ГШП Ступень передачи 4 $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М48",
+            "name": "Перекл. руч. коррекции подачи и част.вращ. активен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М49",
+            "name": "Перекл. руч. коррекции подачи и част.вращ. неактивен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М51",
+            "name": "Зажим люнета разжат",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М52",
+            "name": "Зажим люнета прижат",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М58",
+            "name": "Выкл. промывку раб. пространства ГШП/КШП (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М59",
+            "name": "Вкл. промывку раб. пространства ГШП/КШП (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М60",
+            "name": "Смена прутка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М61",
+            "name": "Смена прутка профильный материал",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М62",
+            "name": "Закр. устройство захвата",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М63",
+            "name": "Откр. устройство захвата",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М66",
+            "name": "Револьвер закр. устройство захвата",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М67",
+            "name": "Револьвер откр. устройство захвата",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М70",
+            "name": "Откр. фикс. тормоз ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М71",
+            "name": "Разжим задней бабки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М72",
+            "name": "Зажим задней бабки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М73",
+            "name": "Демпферный тормоз прижат (только в режиме оси С)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М74",
+            "name": "Демпферный тормоз разжат (только в режиме оси С)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М77",
+            "name": "Зажим заготовки разжат при вращении ГШП ( в соединении с М11)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М78",
+            "name": "Выключ. функцию М77 ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М80",
+            "name": "Зажим люнета 1",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М81",
+            "name": "Разжим люнета 1",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М82",
+            "name": "Зажим люнета 2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М83",
+            "name": "Разжим люнета 2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М84",
+            "name": "Каретка люнета вперед",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М85",
+            "name": "Каретка люнета назад",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М92",
+            "name": "Транспортер стружки включен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М93",
+            "name": "Транспортер стружки выключен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М94",
+            "name": "Устройство снятия детали спереди",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М95",
+            "name": "Устройство снятия детали сзади",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М96",
+            "name": "Устройство снятия детали поз. ожидания (М94 или М95)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М97",
+            "name": "Устройство снятия детали, ускоренный ход (М94 или М95)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М99",
+            "name": "Конец подпрограммы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М101",
+            "name": "Блокировка записи данных $1 включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М102",
+            "name": "Блокировка записи данных $1 выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М103",
+            "name": "ГШП вкл., правый ход $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М104",
+            "name": "ГШП вкл., левый ход $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М105",
+            "name": "ГШП останов $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М107",
+            "name": "Вкл. промывку рев.1 высок. давл. (из друг. подсистемы) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М108",
+            "name": "Вкл. промывку рев.1 низк. давл./ вкл. внутр. промывку фрезерного узла (СОЖ) ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М109",
+            "name": "Выкл. промывку рев.1/ выкл. внутр. промывку фрезерного узла (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М110",
+            "name": "Зажать деталь в ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М111",
+            "name": "Освободить деталь в ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М112",
+            "name": "Позиционировать ГШП $1 (S1)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М114",
+            "name": "Закр. направл. втулку",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М115",
+            "name": "Закр. направл. втулку, выс. давление",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М116",
+            "name": "Откр. направл. втулку",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М117",
+            "name": "Вкл. ось С ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М118",
+            "name": "Выкл. ось С ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М122",
+            "name": "Огран. крут. момента 2 шп. 1 выкл.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М123",
+            "name": "Огран. крут. момента 2 шп. 1 вкл.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М127",
+            "name": "Включение оси С ГШП без исходной точки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М128",
+            "name": "Дополнительный блок параметров для преобразователя частот ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М129",
+            "name": "Дополнительный блок параметров для преобразователя частот КШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М130",
+            "name": "Проверка прод. обточки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М131",
+            "name": "Проверка коротк. обточки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М132",
+            "name": "Зеркальная обработка включена. Вторая ось",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М133",
+            "name": "Зеркальная обработка выключена. Вторая ось",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М134",
+            "name": "Включение закоммент. блоков",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М135",
+            "name": "Точный останов включен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М177",
+            "name": "Вкл. разблок. сдвига магазина (G87)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М187",
+            "name": "Вкл. разблок. сдвига магазина (G87)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М188",
+            "name": "Выкл. разблок. сдвига магазина (G87)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М192",
+            "name": "Откр. кожух транспортёра деталей",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М193",
+            "name": "Закр. кожух транспортёра деталей",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М194",
+            "name": "Лента подачи деталей вкл./ вперёд",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М195",
+            "name": "Лента подачи деталей выкл./ назад",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М201",
+            "name": "Блокировка записи данных $2 включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М202",
+            "name": "Блокировка записи данных $2 выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М203",
+            "name": "КШП правый ход, $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М204",
+            "name": "КШП левый ход ход, $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М205",
+            "name": "КШП останов $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М207",
+            "name": "Вкл. промывку рев.2 выс. давл. (из другой подсист.) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М208",
+            "name": "Вкл. промывку рев.2 низкое давл. (из другой подсист.) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М209",
+            "name": "Выкл. промывку рев.2 (из другой подсист.) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М210",
+            "name": "Зажать деталь в КШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М211",
+            "name": "Разжать деталь в КШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М217",
+            "name": "Вкл. ось С КШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М218",
+            "name": "Выкл. ось С КШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М219",
+            "name": "КШП, закр. тормоз остановки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М222",
+            "name": "Огранич. крут. момента 2 шп. 2 вкл",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М223",
+            "name": "Огранич. крут. момента 2 шп. 2 выкл",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М227",
+            "name": "Вкл. ось С КШП, без точки начала отсчёта (режим 2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М232",
+            "name": "Вкл. отражение 3-й оси",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М233",
+            "name": "Выкл. отражение 3-й оси",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М235",
+            "name": "Точный останов 2 включен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М236",
+            "name": "Точный останов 2 выключен",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М237",
+            "name": "Вкл. ось Y2 виртуально, реж. синхр. ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М238",
+            "name": "Выкл. ось Y2 виртуально, реж. синхр. ",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М240",
+            "name": "КШП ступень передачи 1 $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М241",
+            "name": "КШП ступень передачи 2 $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М242",
+            "name": "КШП ступень передачи 3 $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М243",
+            "name": "КШП ступень передачи 4 $2 (S2)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М250",
+            "name": "Вкл. промывку через КШП (через таймер 16172) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М251",
+            "name": "Вкл. глубокое сверление рев.2 поз-я 2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М252",
+            "name": "Выкл. глубокое сверление рев.2 поз-я 2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М260",
+            "name": "Вкл. промывку через КШП (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М261",
+            "name": "Выкл. промывку через КШП (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М268",
+            "name": "Вкл. промывку на ГШП/КШП (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М269",
+            "name": "Выкл. промывку на ГШП/КШП (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М270",
+            "name": "КШП откр. тормоз остановки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М271",
+            "name": "Вкл. глубокое сверление рев.2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М272",
+            "name": "Выкл. глубокое сверление рев.2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М277",
+            "name": "Разжать деталь в КШП при вращении (в комбин. с М211)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М278",
+            "name": "Выкл. функцию М277",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М294",
+            "name": "Лента подачи деталей 2 вкл./ вперёд",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М295",
+            "name": "Лента подачи деталей 2 выкл./ назад",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М303",
+            "name": "Вращающий привод включен, правый ход $1 S3",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М304",
+            "name": "Вращающий привод включен, левый ход $1 S3",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М305",
+            "name": "Вращающий привод выключен. $1 S3",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М332",
+            "name": "Зеркальная обработка включена. 4-я ось",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М333",
+            "name": "Зеркальная обработка выключена. 4-я ось",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М340",
+            "name": "Выбор ступени коробки передач 1 (S3)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М341",
+            "name": "Выбор ступени коробки передач 2 (S3)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М407",
+            "name": "Вкл. промывку задн. аппарат, высок. давление (из другой подсистемы) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М408",
+            "name": "Вкл. промывку задн. аппарат, низк. давление (из другой подсистемы) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М409",
+            "name": "Выкл. промывку задн. аппарат (из другой подсистемы) (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М452",
+            "name": "Промывка задн. аппарат, поз. 12 (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М454",
+            "name": "Промывка задн. аппарат, поз. 14 (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М456",
+            "name": "Промывка задн. аппарат, поз. 16 (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М457",
+            "name": "Промывка задн. аппарат, поз. 17 (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М459",
+            "name": "Выкл. промывку задн. аппарат (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М466",
+            "name": "Вкл. промывку задн. аппарат снаружи вверху (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М467",
+            "name": "Выкл. промывку задн. аппарат снаружи вверху (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М468",
+            "name": "Вкл. промывку задн. аппарат снаружи внизу (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М469",
+            "name": "Выкл. промывку задн. аппарат снаружи внизу (СОЖ)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М471",
+            "name": "Глубокое сверление, задн. аппарат вкл",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М472",
+            "name": "Глубокое сверление, задн. аппарат выкл",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М503",
+            "name": "Вкл. привод инструмента 1, правый ход $1 (S5) (вертикальное расположение фрезы)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М504",
+            "name": "Вкл. привод инструмента 1, левый ход $1 (S5) (горизонтальное расположение фрезы)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М505",
+            "name": "Выкл. привод инструмента 1, $1 (S5)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М512",
+            "name": "Позиционировать привод инструмента 1 $1 (S5) (G319)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М540",
+            "name": "Привод инстр. 1, ступень передачи 1 $1 (S5)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М541",
+            "name": "Привод инстр. 1, ступень передачи 2 $1 (S5)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М542",
+            "name": "Привод инстр. 1, ступень передачи 3 $1 (S5)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М543",
+            "name": "Привод инстр. 1, ступень передачи 4 $1 (S5)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М603",
+            "name": "Вкл. привод инструмента 2, правый ход $2 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М604",
+            "name": "Вкл. привод инструмента 2, левый ход $2 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М605",
+            "name": "Выкл. привод инструмента 2, $2 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М612",
+            "name": "Позиционировать привод инстум. 2 $2 (S6) (G319)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М640",
+            "name": "Привод инстр. 2, ступень передачи 1 $1 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М641",
+            "name": "Привод инстр. 2, ступень передачи 2 $1 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М642",
+            "name": "Привод инстр. опер. 2, ступень передачи 3 $1 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М643",
+            "name": "Привод инстр. 2, ступень передачи 4 $1 (S6)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М703",
+            "name": "Задание направления включения револьверной головки правый ход",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М704",
+            "name": "Задание направления включения револьверной головки левый ход",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М730",
+            "name": "Счетчик деталей при работе без М30",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М762",
+            "name": "Термокомпенсация",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М765",
+            "name": "Специальные параметры для температурной компенсации",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М777",
+            "name": "Счетчик деталей при работе без М30 (срабатывает сообщ. LSV2/TDDE)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М803",
+            "name": "Вкл. привод задн. аппарата, правый ход $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М804",
+            "name": "Вкл. привод задн. аппарата, левый ход $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М805",
+            "name": "Выкл. привод задн. аппарата, $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М812",
+            "name": "Позиционировать задн. аппарат $4 (S8) (G319)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М840",
+            "name": "Привод задн. аппарата, ступень передачи 1 $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М841",
+            "name": "Привод задн. аппарата, ступень передачи 2 $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М842",
+            "name": "Привод задн. аппарата, ступень передачи 3 $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М843",
+            "name": "Привод задн. аппарата, ступень передачи 4 $4 (S8)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М901",
+            "name": "Проверка синхронизации (G22)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М907",
+            "name": "СОЖ выс. давление (G907)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М908",
+            "name": "СОЖ низкое давление (G908)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М909",
+            "name": "СОЖ глубокое сверление (G909)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М912",
+            "name": "G312 (направляющая втулка)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М914",
+            "name": "Синхр. шпинделей (G314)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М915",
+            "name": "Многогранная обработка (G315)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М916",
+            "name": "Обработка червячной фрезой (G316)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М919",
+            "name": "Позиционирование шпинделя (G319)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М920",
+            "name": "Квитировать измереие",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М939",
+            "name": "Проверка синхронизации (G940)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М940",
+            "name": "Синхронизировать шпиндели (G314)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М941",
+            "name": "Выкл. синхр. шпинделей (G314)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М951",
+            "name": "Выкл. многогранную обработку (G315)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М952",
+            "name": "Считать положение оси (точный останов) (G952)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М953",
+            "name": "Револьвер переключение вправо",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М954",
+            "name": "Револьвер переключение влево",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М957",
+            "name": "Револьвер скорость вкл. 1 (по умолч. 25%)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М958",
+            "name": "Револьвер скорость вкл. 2 (по умолч. 50%)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М961",
+            "name": "Выкл. обработку червячной фрезой (G316)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М987",
+            "name": "Нарезание резьбы (G387)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М988",
+            "name": "Выкл. нарезание резьбы (G387)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "M - kod",
+            "code": "М992",
+            "name": "Ожидание синхрометки в подсистеме $2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G00",
+            "name": "Прямо на ускоренном ходу",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G01",
+            "name": "Подача по прямой",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G02",
+            "name": "Дуги окружности по часовой стрелке (вправо)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G03",
+            "name": "Дуги окружности против часовой стрелки (влево)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G04",
+            "name": "Время ожидания",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G08",
+            "name": "Подача по прямой (активный контроль)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G09",
+            "name": "Подача по прямой (точный останов)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G10",
+            "name": "Функция фрезерования выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G11",
+            "name": "Функция фрезерования включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G14",
+            "name": "Синхрон. резание выкл.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G15",
+            "name": "Синхрон. резание вкл.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G16",
+            "name": "Плоскость фрезерования Боковая поверхность",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G17",
+            "name": "Плоскость фрезерования Торцовая поверхность",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G18",
+            "name": "Плоскость фрезерования X/Z (режим обточки)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G19",
+            "name": "Плоскость фрезерования Продольная резка/Тангентальная плоскость",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G20",
+            "name": "Выбор программирования в дюймах",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G21",
+            "name": "Выбор программирования в мм",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G22",
+            "name": "Вызов подпрограммы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G24",
+            "name": "–G27 Подвод к точке смены инструмента",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G28",
+            "name": "Подвод к точке начала отсчёта",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G33",
+            "name": "Нарезание резьбы в отдельном блоке данных/ при покадровой обработке",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G34",
+            "name": "Нарезание резьбы в отдельном блоке (изменяемый шаг)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G387",
+            "name": "Синхронизированное нарезание резьбы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G36",
+            "name": "Открытие памяти программы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G37",
+            "name": "Открытие памяти (данных) инструмента",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G38",
+            "name": "Открытие памяти параметров",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G40",
+            "name": "Компенсация радиуса режущей кромки выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G41",
+            "name": "Компенсация радиуса резца или фрезы включена, инструмент слева от контура",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G42",
+            "name": "Компенсация радиуса резца или фрезы включена, инструмент справа от контура",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G46",
+            "name": "Компенсация радиуса резца включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G53",
+            "name": "Ускоренный ход по прямой, координаты относительно нуля станка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G54",
+            "name": "–G57 Смещение нуля",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G59",
+            "name": "Аддативное смещение нулевой точки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G63",
+            "name": "Датчик угла поворота ГШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G64",
+            "name": "Датчик угла поворота КШП",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G65",
+            "name": "Выключение барьерных точек",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G66",
+            "name": "Включение барьерных точек",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G70",
+            "name": "Цикл черновой обработки для инструмента с отрицательным углом установки",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G71",
+            "name": "Цикл черновой обработки – продольно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G72",
+            "name": "Цикл черновой обработки – поперечно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G73",
+            "name": "Цикл черновой обработки – параллельно контуру",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G74",
+            "name": "Цикл черновой обработки с прерывистым резанием – продольно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G75",
+            "name": "Цикл черновой обработки с прерывистым резанием – поперечно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G76",
+            "name": "Многопроходный цикл нарезания резьбы",
+            "notes": "G76 X.. Z.. I.. J.. K.. H.. F.. A57 D..;\n  где:\nX, Z - координаты по соответсвующей оси;\nI - наклон при конической резьбе, мм.;\nJ - угол при конической резьбе;\nK - начальное расстояние между заготовкой и резцом (0,6 * шаг резьбы);\nH - количество проходов;\nF - шаг резьбы;\nD - глубина резания последнего прохода.",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G77",
+            "name": "Цикл фаски – продольно",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G78",
+            "name": "Цикл нарезания резьбы (специальная резьба)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G79",
+            "name": "Цикл снятия фаски – поперечная",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G81",
+            "name": "Цикл повтора (G77, G78, G79)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G82",
+            "name": "Цикл нарезания резьбы (метчик, плашка)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G83",
+            "name": "Цикл глубокого сверления 1",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G84",
+            "name": "Цикл глубокого сверления 2",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G86",
+            "name": "Цикл глубокого сверления",
+            "notes": "G86 X.. D.. H.. F.., где:\nX - глубина сверления;\nD - глубина первого засверливания;\nH - количество проходов;\nF - рабочая подача.",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G88",
+            "name": "Нисходящий контур включен (G71, G72, G73)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G89",
+            "name": "Функция G88 выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G90",
+            "name": "Программирование оси C–V в абсолютных размерах",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G91",
+            "name": "Программирование оси C–V в составных размерах",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G92",
+            "name": "Ограничение числа оборотов/ остаточный путь удалить",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G94",
+            "name": "Подача в мм/мин",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G95",
+            "name": "Подача в мм/об.",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G96",
+            "name": "Постоянная скорость резания",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G97",
+            "name": "Число оборотов",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G98",
+            "name": "Коррекция подачи включена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G99",
+            "name": "Коррекция подачи выключена",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G101",
+            "name": "Автоматическое конструирование геометрии I –продольная",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G102",
+            "name": "Автоматическое конструирование геометрии I–поперечная",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G122",
+            "name": "Запуск фоновой подсистемы",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G140",
+            "name": "Кроссировать",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G156",
+            "name": "Соединение/ наложение",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G164",
+            "name": "Распознав. направ. вращ. инструмента с приводом при опережении/ отставании",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G113",
+            "name": "Отмена G164",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G204",
+            "name": "Макрос канавки",
+            "notes": "G204 A.. B.. C.. D.. E.. F.. H.. I.. J.. K.. M.. R..  \nГде: A - начальная верхняя точка по Х;\nB - угол фаски слева;\nC - скругление внутри канавки слева;\nD - диаметр канавки;\nE - скругление внутри канавки справа;\nF - угол фаски справа;\nH - конечная верхняя точка по Х;\nI - ширина канавки;\nJ - конечная точка канавки по Z;\nK - ширина канавочной пласины;\nM - радиус канавочной пластины;\nR - рабочая подача.",
+            "images": "assets/img/kanavka.png"
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G307",
+            "name": "Удалить позиционир. с остаточ. значением",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G308",
+            "name": "AWUE",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G309",
+            "name": "Диагностика",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G314",
+            "name": "Синхронизация шпинделей",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G315",
+            "name": "Многогранная обработка",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G316",
+            "name": "Обработка черв. фрезой",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G319",
+            "name": "Позиционирование шпинделя без оси С",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G337",
+            "name": "Резьбофрезерование",
+            "notes": "G337 X.. Y.. Z.. F.. M.. P.. ;\n   где:\nX, Y, Z - координаты по соответсвующей оси;\nF - подача;\nM - номинальный диаметр резьбы;\nP - шаг резьбы.\nСумма начального положения фрезы по Z перед макросом резьбофрезерования с конечным положением после нарезания резьбы (Z) должна делиться на цело на шаг резьбы.\n  При переходе на полнопроходную резьбофрезу необходимо поменять последнее перемещение G0 перед резьбофрезерованием примерно на 2 витка в сторону заготовки и снизить подачу примерно до F20.",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G364",
+            "name": "Наложение частоты вращения шпинделей",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G387",
+            "name": "Нарез. резьбы, без выдвиж. держателя (синхрониз.)",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G201",
+            "name": "- G299 Вызов макросов пользователя",
+            "notes": "",
+            "images": ""
+        },
+        {
+            "machine": "TRAUB (TX8H)",
+            "nameCode": "G - kod",
+            "code": "G301",
+            "name": "- G399 Вызов макросов фирмы TRAUB",
+            "notes": "",
+            "images": ""
+        }
+    ]
+}

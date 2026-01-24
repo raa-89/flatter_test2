@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:test2/screens/DrawerScreen.dart';
-import 'package:test2/const.dart';
+import 'package:test2/core/const.dart';
 
 class InfoPages extends StatefulWidget {
   const InfoPages({super.key});

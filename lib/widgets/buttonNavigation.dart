@@ -1,12 +1,13 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:test2/const.dart';
+import 'package:test2/core/const.dart';
 
 class NewButtonNavigation extends StatefulWidget {
   final String tooltip1;
   final String tooltip2;
   final String tooltip3;
   final Function(int) onDataChanged;
+  final bool isDrawerOpen;
 
   const NewButtonNavigation({
     super.key,
@@ -14,6 +15,7 @@ class NewButtonNavigation extends StatefulWidget {
     required this.tooltip2,
     required this.tooltip3,
     required this.onDataChanged,
+    required this.isDrawerOpen,
   });
 
   @override
@@ -31,11 +33,19 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(radiusCont)),
-        color: Colors.blueGrey[50],
+        borderRadius: widget.isDrawerOpen
+            ? const BorderRadius.vertical(bottom: Radius.circular(radiusCont))
+            : null,
+        // color: Colors.transparent,
+        gradient: LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          colors: NavigationConstant.colorBackgraundBottonNavigator,
+        ),
+        // color: Colors.blueGrey[50],
       ),
 
-      height: 80,
+      height: NavigationConstant.heightBottonNavigator,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -54,12 +64,19 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     fontSize: heightTextInIconBar,
-                    color: pages == 1 ? Colors.deepPurple : Colors.black,
+                    color: pages == 1
+                        ? TextConst.colorIconInFocus
+                        : TextConst.colorIconNoFocus,
                   ),
                 ),
                 Text(
                   widget.tooltip1,
-                  style: const TextStyle(fontSize: heightTooltipInIconBar),
+                  style: TextStyle(
+                    color: pages == 1
+                        ? TextConst.colorIconInFocus
+                        : TextConst.colorIconNoFocus,
+                    fontSize: heightTooltipInIconBar,
+                  ),
                 ),
               ],
             ),
@@ -79,12 +96,19 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
                   style: TextStyle(
                     fontWeight: FontWeight.w900,
                     fontSize: heightTextInIconBar,
-                    color: pages == 2 ? Colors.deepPurple : Colors.black,
+                    color: pages == 2
+                        ? TextConst.colorIconInFocus
+                        : TextConst.colorIconNoFocus,
                   ),
                 ),
                 Text(
                   widget.tooltip2,
-                  style: const TextStyle(fontSize: heightTooltipInIconBar),
+                  style: TextStyle(
+                    color: pages == 2
+                        ? TextConst.colorIconInFocus
+                        : TextConst.colorIconNoFocus,
+                    fontSize: heightTooltipInIconBar,
+                  ),
                 ),
               ],
             ),
@@ -102,11 +126,18 @@ class _NewButtonNavigationState extends State<NewButtonNavigation> {
                 Icon(
                   Icons.info_outline,
                   size: heightIconInIconBar,
-                  color: pages == 3 ? Colors.deepPurple : Colors.black,
+                  color: pages == 3
+                      ? TextConst.colorIconInFocus
+                      : TextConst.colorIconNoFocus,
                 ),
                 Text(
                   widget.tooltip3,
-                  style: const TextStyle(fontSize: heightTooltipInIconBar),
+                  style: TextStyle(
+                    color: pages == 3
+                        ? TextConst.colorIconInFocus
+                        : TextConst.colorIconNoFocus,
+                    fontSize: heightTooltipInIconBar,
+                  ),
                 ),
               ],
             ),

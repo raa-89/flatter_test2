@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test2/widgets/routes.dart';
+import 'package:test2/core/routes.dart';
 
 void main() {
   runApp(

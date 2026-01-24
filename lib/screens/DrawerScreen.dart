@@ -1,7 +1,7 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:test2/const.dart';
-import 'package:test2/widgets/routes.dart';
+import 'package:test2/core/const.dart';
+import 'package:test2/core/routes.dart';
 
 class Drawerscreen extends StatefulWidget {
   final Function() drawerClose;
@@ -12,9 +12,9 @@ class Drawerscreen extends StatefulWidget {
 }
 
 class _DrawerscreenState extends State<Drawerscreen> {
-  static const String title1 = titleHome;
-  static const String title2 = titleFanuc;
-  static const String title3 = titleTraub;
+  static const String title1 = PagesConstants.titleHome;
+  static const String title2 = PagesConstants.titleFanuc;
+  static const String title3 = PagesConstants.titleTraub;
   // static const String title5 = titleSyntec;
   // static const String title4 = titleInfo;
 
@@ -25,8 +25,10 @@ class _DrawerscreenState extends State<Drawerscreen> {
     //построение изменяемого виджета
     return SafeArea(
       child: Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
         color: Colors.blueGrey[500],
-        padding: const EdgeInsets.only(top: 50, left: 20, bottom: 70),
+        padding: const EdgeInsets.only(top: 30, left: 20, bottom: 70),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
@@ -39,8 +41,9 @@ class _DrawerscreenState extends State<Drawerscreen> {
               ],
             ),
             Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
                 ItemMenu(
                   labelText: title1,
                   iconWidget: Icons.home,
@@ -55,7 +58,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                 ),
                 ItemMenu(
                   labelText: title2,
-                  iconWidget:  Icons.dashboard_sharp,
+                  iconWidget: Icons.dashboard_sharp,
                   routes: () {
                     Navigator.pushNamed(
                       context,
@@ -116,7 +119,7 @@ class _DrawerscreenState extends State<Drawerscreen> {
                 ),
               ],
             ),
-            const SizedBox(height: 150),
+            // const SizedBox(height: 180),
           ],
         ),
       ),
